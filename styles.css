@@ -1,3 +1,44 @@
-li a{
-    color: blue;
+body {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.navbar-header {
+    height:300%;
+    border: solid red;
+    width:100%
+}
+
+.navbar-brand {
+    /* background: url("images/news.png") no-repeat; */
+    background-size: contain;
+    background-color: blue;
+    width: 10%;
+    height: 10%;
+}
+
+li {
+    border: solid black
+}
+
+@media screen and (min-width: 768px)
+{
+    .navbar-brand {
+    /* width:130px;
+    height:90px;
+    top:40px; */
+    }
+    .navbar-header {
+        /* width:130px; */
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .navbar-brand {
+    /* width:210px;
+    height:150px;
+    top:0; */
+    }
 }
