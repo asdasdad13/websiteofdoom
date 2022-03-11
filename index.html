@@ -58,13 +58,18 @@
                 </ul>
             </nav>
         </header>
-            <div class="row mt-md-4">
-                <div class="col-md-12" id="'breaking-news-ticker">
-                    <p>lol</p>
-                </div>
-    
+        <div class="text-center border-bottom d-flex justify-content-center">
+            <time class='text-uppercase' id="current_date"></time>
+        </div>
+        <div class="row mt-md-3">
+            <div class="py-2 pl-2" style='width:fit-content' id="breaking-news-ticker">
+                <p id="breaking-news-title">BREAKING NEWS:</p>
             </div>
-
+            <div class='d-flex align-items-center' style='width:80%' id="breaking-news-content-container">
+                <ul id="breaking-news-list"></ul>
+            </div>
+        </div>
     </div>
+	<script type="text/javascript" src='index.js'></script>
 </body>
 </html>

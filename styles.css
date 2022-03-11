@@ -1,12 +1,39 @@
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
 }
 
 body {
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 400;
+}
+
+p
+{
+    margin: 0;
+}
+
+#breaking-news-ticker
+{
+    background-color: #A30F15;
+    color: #FFFFFF;
+}
+
+#breaking-news-content-container
+{
+    background-color: #FFE6DA;
+}
+
+#breaking-news-list
+{
+    padding:0;
+    margin:0;
+}
+
+#breaking-news-list li
+{
+    color: #A30F15;
 }
 
 .navbar-header {
