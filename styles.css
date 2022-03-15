@@ -20,9 +20,18 @@ h2 {
     padding-right:0;
 }
 
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
 p
 {
     margin: 0;
+}
+
+#top-stories-container {
+    width: 15rem;
 }
 
 #breaking-news-ticker
