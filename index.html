@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class='container-md'>
-        <header class="border-bottom py-2 row mt-md-2">
+        <header class="border-bottom pt-2 row">
             <div class="row justify-content-end p-0" id="search-login-row">
                 <div class="col col-md-3 col-lg-2 mb-4 mr-md-4 p-0" id="search-login-container">
                     <form class="input-group rounded form-inline">
@@ -39,9 +39,10 @@
                     <li class="nav-item col-md"><a class="nav-link" href='#'>Politics</a></li>
                     <li class="nav-item col-md"><a class="nav-link" href='#'>Tech</a></li>
                     <li class="nav-item col-md-2 d-flex align-items-end">
-                        <div class='navbar-header col col-md-2 d-flex justify-content-center'>
-                            <a class='text-hide navbar-brand nav-link active' title='Home' href="#">
+                        <div class='navbar-header col-md-2 d-flex align-items-end'>
+                            <a class='text-hide navbar-brand nav-link active position-absolute col-md-2 p-0' title='Home' href="#">
                                 <h1 style="display:none">The News Channel</h1>
+                                <img class='w-100' src="images/news.png"/>
                             </a>
                         </div>
                     </li>
@@ -76,29 +77,32 @@
         </div>
 
         <section class='row mt-2' id="main-content">
-            <div class="row">
-                <div class="col" id="top-stories-container">
-                    <div class="row border-bottom mb-2">
-                        <h2 class="mb-0">
-                            TOP STORIES
-                        </h2>
+            <div class="col" id="top-stories-container">
+                <div class="row border-bottom mb-2">
+                    <h2 class="mb-0 p-0">
+                        TOP STORIES
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="card-body col-md ps-md-0" style="width:200px">
+                        <h3 class="card-title">
+                            NYC woman accused of holding online 'date' hostage for $100K in kidnapping, torture plot
+                        </h3>
+                        <p class="card-text">
+                            Valerie Rosario, 22, is facing charges of kidnapping and attempted murder after allegedly luring the man she met on Instagram.
+                        </p>
                     </div>
-                    <article class="row" id="featured-story-container">
-                        <div class="col-md card">
-                            <div class="card-body col-md-auto p-0">
-                                <h3 class="card-title">
-                                    NYC woman accused of holding online 'date' hostage for $100K in kidnapping, torture plot
-                                </h3>
-                            </div>
-                            <div class="card-media col-md-4">
-                                <img class='w-10' src="images/tekton-EcE9dFfXwwE-unsplash.jpg">
-                            </div>
-                        </div>
-                    </article>
+                    <div class="col-md-8 p-0">
+                        <img class='card-img' src="images/tekton-EcE9dFfXwwE-unsplash.jpg"/>
+                    </div>
+                    
                 </div>
-                <div class="col col-lg-3 latest-stories-container border">
-                    b
-                </div>
+                <article class="card row" id="featured-story-container">
+                    <a href='#' class='card-link stretched-link'></a>
+                </article>
+            </div>
+            <div class="col-md-3 latest-stories-container">
+                b
             </div>
         </section>
     </div>
