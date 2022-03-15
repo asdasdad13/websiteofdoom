@@ -15,68 +15,65 @@ window.onload = function() {
     switch (date.getMonth())
     {
         case 0:
-            m = "January";
+            m = "JANUARY";
             break;
         case 1:
-            m = "February";
+            m = "FEBRUARY";
             break;
         case 2:
-            m = "March";
+            m = "MARCH";
             break;
         case 3:
-            m = "April";
+            m = "APRIL";
             break;
         case 4:
-            m = "May";
+            m = "MAY";
             break;
         case 5:
-            m = "June";
+            m = "JUNE";
             break;
         case 6:
-            m = "July";
+            m = "JULY";
             break;
         case 7:
-            m = "July";
+            m = "AUGUST";
             break;
         case 8:
-            m = "August";
+            m = "SEPTEMBER";
             break;    
         case 9:
-            m = "September";
+            m = "OCTOBER";
             break;
         case 10:
-            m = "October";
+            m = "NOVEMBER";
             break;
         case 11:
-            m = "November";
-            break;
-        case 12:
-            m = "December";
+            m = "DECEMBER";
             break;
     }
     var d = date.getDate();
     switch (date.getDay())
     {
         case 0:
-            day = "Sunday";
+            day = "SUNDAY";
             break;
         case 1:
-            day = "Monday";
+            day = "MONDAY";
             break;
         case 2:
-            day = "Tuesday";
+            day = "TUESDAY";
             break;
         case 3:
-            day = "Wednesday";
+            day = "WEDNESDAY";
             break;
         case 4:
-            day = "Thursday";
+            day = "THURSDAY";
             break;
         case 5:
-            day = "Friday";
+            day = "FRIDAY";
             break;
         case 6:
-            day = "Saturday";
+            day = "SATURDAY";
     }
     document.getElementById("current_date").innerHTML = day + ', ' + m + ' ' + d + ', ' + y;
 }
