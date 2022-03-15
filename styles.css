@@ -4,14 +4,32 @@
 }
 
 body {
-    font-family: 'PT Serif';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'PT Serif', serif;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+}
+
+#featured-story-container .card-title {
+    font-size: 2.rem;
+}
+
+.navbar-nav {
+    padding-right:0;
 }
 
 p
 {
     margin: 0;
+}
+
+/* #featured-story-container .card-media {
+    max-width:
+} */
+
+#current_date {
+    width:fit-content;
 }
 
 #breaking-news-ticker
@@ -23,6 +41,7 @@ p
 #breaking-news-content-container
 {
     background-color: #FFE6DA;
+    width:max-content;
 }
 
 #breaking-news-list
