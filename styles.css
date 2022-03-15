@@ -12,8 +12,8 @@ h2 {
     font-family: 'DM Serif Display', serif;
 }
 
-#featured-story-container .card-title {
-    font-size: 2.1rem;
+#featured-story-container p,h2{
+    font-size: 1.5em;
 }
 
 .navbar-nav {
