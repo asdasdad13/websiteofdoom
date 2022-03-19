@@ -18,8 +18,8 @@
 <body>
     <div class='container-md'>
         <header class="border-bottom pt-2 row">
-            <div class="row justify-content-end p-0" id="search-login-row">
-                <div class="col col-md-3 col-lg-2 mb-4 mr-md-4 p-0" id="search-login-container">
+            <div class="row justify-content-end" id="search-login-row">
+                <div class="col col-md-3 col-lg-2 mb-4 mr-md-4" id="search-login-container">
                     <form class="input-group rounded form-inline">
                         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
                         <span class="input-group-text border-0" id="search-addon">
@@ -67,51 +67,71 @@
             <time id="current_date"></time>
         </div>
 
-        <div class="row mt-md-3" id="breaking-news">
-            <div class="py-2 pl-2" style='width:fit-content' id="breaking-news-ticker">
+        <div class="row mt-md-3 mb-md-3 d-flex" id="breaking-news">
+            <div class="py-2 pl-2" id="breaking-news-ticker">
                 <p id="breaking-news-title">BREAKING NEWS:</p>
             </div>
-            <div class='d-flex align-items-center' id="breaking-news-content-container">
+            <div class='d-flex align-items-center flex-shrink-1' id="breaking-news-content">
                 <ul id="breaking-news-list"></ul>
             </div>
         </div>
 
         <div id="main-content">
-            <section class="row p-0 news-category-block" id="top-stories-and-latest">
+            <section class="row news-category-block" id="top-stories-and-latest">
                 <div class="col-md me-2" id="top-4-stories-without-latest">
-                    <div class="row news-category-heading mb-md-2">
-                        <h2 class="p-0">
+                    <div class="row">
+                        <h2>
                             TOP STORIES
                         </h2>
                     </div>
-                    <div class="row" id="top-1-story">
-                        <div class="col">
-                            <article class="card p-0">
-                                <div class="row">
-                                    <div class="col-md-4 p-0">
-                                        <div class="card-body ps-md-0 pt-md-0">
-                                            <h3 class="card-title">
-                                                NYC woman accused of holding online 'date' hostage for $100K in kidnapping, torture plot
-                                            </h3>
-                                            <p class="card-text">
-                                                Valerie Rosario, 22, is facing charges of kidnapping and attempted murder after allegedly luring the man she met on Instagram.
-                                            </p>
+                    <div class="row">
+                        <div class="col" id="top-1-story">
+                            <article>
+                                <div class="card">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="card-body">
+                                                <h3 class="card-title">
+                                                    NYC woman accused of holding online 'date' hostage for $100K in kidnapping, torture plot
+                                                </h3>
+                                                <p class="card-text">
+                                                    Valerie Rosario, 22, is facing charges of kidnapping and attempted murder after allegedly luring the man she met on Instagram.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">
+                                            <img class='card-img' src="images/tekton-EcE9dFfXwwE-unsplash.jpg"/>
                                         </div>
                                     </div>
-                                    <div class="col-md p-0">
-                                        <img class='card-img' src="images/tekton-EcE9dFfXwwE-unsplash.jpg"/>
-                                    </div>
+                                    <a href='#' class='card-link stretched-link'></a>
                                 </div>
-                                <a href='#' class='card-link stretched-link'></a>
                             </article>
+                            
+                        </div>
+                        <div class="col-md-2 latest-stories-container">
+                            <h2>
+                                LATEST
+                            </h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <article class="card">
+                                        <h4>
+                                            WORLD
+                                        </h4>
+                                        <h3>
+                                            Oil prices break US$100, S'pore stocks sink as Russia launches military attack on Ukraine
+                                        </h3>
+                                        <a href='#' class='card-link stretched-link'></a>
+                                    </article>
+                                </li>
+                                
+                            </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-            
-                <div class="col-md-3 latest-stories-container bg-danger">
-                    b
-                </div>
+                
             </section>
         </div>
     </div>
