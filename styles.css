@@ -47,17 +47,6 @@ h2, p
     margin: 0;
 }
 
-#breaking-news {
-    width:max-content;
-}
-
-#breaking-news-ticker
-{
-    background-color: #A30F15;
-    color: #FFFFFF;
-    width: fit-content;
-}
-
 h2, h4, .row, .card-body, .col, .card-img {
     padding: 0 !important;
 }
@@ -73,13 +62,15 @@ h2, h4, .row, .card-body, .col, .card-img {
 
 #breaking-news-list
 {
-    padding:0;
-    margin:0;
+    margin: auto;
+    color: #A30F15;
+
 }
 
-#breaking-news-list li
+#breaking-news-ticker
 {
-    color: #A30F15;
+    background-color: #A30F15;
+    color: #FFFFFF;
 }
 
 @media screen and (min-width: 768px)
