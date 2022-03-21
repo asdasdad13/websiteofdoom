@@ -33,6 +33,9 @@ var data = [
     }
 ]
 
-var source = document.getElementById("latest-news-template").innerHTML;
+console.log(1)
+var source = document.getElementById("featured-news-template");
+console.log(source)
+console.log(2)
 var template = Handlebars.compile(source);
-var rendered = template(data);
+var html = template(data);
