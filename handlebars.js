@@ -33,9 +33,19 @@ var data = [
     }
 ]
 
-console.log(1)
-var source = document.getElementById("featured-news-template");
-console.log(source)
-console.log(2)
-var template = Handlebars.compile(source);
+Handlebars.registerHelper('find_featured', function(options) {
+    for (i in data)
+    {
+        var category_articles = data[i].articles;
+        for (j in category_articles)
+        {
+            var article =  category_articles[j];
+            if (article.feature) return options.fn(article);
+        }
+    }
+});
+
+var featured_news_template = document.getElementById("featured-news-template").innerHTML;
+var template = Handlebars.compile(featured_news_template);
 var html = template(data);
+document.querySelector('#top-1-story .row').innerHTML += html;
