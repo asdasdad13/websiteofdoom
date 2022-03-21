@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
     <link rel="stylesheet" type="text/css" href="styles.css">
 	<script type="text/javascript" src='index.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="handlebars,js"></script>
 </head>
 <body>
     <div class='container-md'>
@@ -116,20 +118,7 @@
                                     LATEST
                                 </h2>
                             </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <article>
-                                        <div class="card">
-                                        <h4>
-                                            WORLD
-                                        </h4>
-                                        <h3>
-                                            Oil prices break US$100, S'pore stocks sink as Russia launches military attack on Ukraine
-                                        </h3>
-                                        <a href='#' class='card-link stretched-link'></a>
-                                        </div>
-                                    </article>
-                                </li>
+                            <ul class="list-group" id="latest-news-list">
                             </ul>
                         </div>
                     </div>

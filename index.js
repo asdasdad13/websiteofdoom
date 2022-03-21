@@ -2,6 +2,7 @@ window.onload = function() {
     //call functions here
     loadBreakingNews();
     loadDate();
+    loadLatestNews();
 }
 
 function loadBreakingNews() {
@@ -86,3 +87,25 @@ function loadDate() {
     }
     document.getElementById('current_date').innerHTML = day + ', ' + m + ' ' + d + ', ' + y;
 }
+
+function loadLatestNews() {
+    var latestNewsList = document.getElementById('latest-news-list');
+    
+
+    
+    
+}
+
+<li class="list-group-item">
+    <article>
+        <div class="card">
+        <h4>
+            WORLD
+        </h4>
+        <h3>
+            Oil prices break US$100, S'pore stocks sink as Russia launches military attack on Ukraine
+        </h3>
+        <a href='#' class='card-link stretched-link'></a>
+        </div>
+    </article>
+</li>
