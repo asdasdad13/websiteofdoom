@@ -44,7 +44,16 @@ Handlebars.registerHelper('find_featured', function(options) {
         }
     }
 });
-var featured_news_template = document.getElementById("featured-news-template").innerHTML;
-var template = Handlebars.compile(featured_news_template);
-var html = template(data);
-document.querySelector('#top-1-story .row').innerHTML += html;
+
+function renderHTML(templateId, selector)
+{
+    var src = document.getElementById(templateId).innerHTML;
+    var template = Handlebars.compile(src);
+    console.log(template)
+    var html = template(data);
+    console.log(html)
+
+    document.querySelector(selector).innerHTML = html;
+}
+
+renderHTML('featured-news-template','#top-1-story .row');
