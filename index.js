@@ -1,9 +1,3 @@
-window.onload = function() {
-    //call functions here
-    loadBreakingNews();
-    loadDate();
-}
-
 function loadBreakingNews() {
     var breakingNewsList = document.getElementById('breaking-news-list');
     var headlines = ['Headline 1','Headline 2','Headline 3'];
@@ -86,3 +80,7 @@ function loadDate() {
     }
     document.getElementById('current_date').innerHTML = day + ', ' + m + ' ' + d + ', ' + y;
 }
+
+
+loadBreakingNews();
+loadDate();

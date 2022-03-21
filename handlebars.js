@@ -45,15 +45,17 @@ Handlebars.registerHelper('find_featured', function(options) {
     }
 });
 
-function renderHTML(templateId, selector)
-{
+Handlebars.registerHelper('sort', function(options) {
+
+})
+
+function renderHTML(templateId, selector) {
     var src = document.getElementById(templateId).innerHTML;
     var template = Handlebars.compile(src);
-    console.log(template)
     var html = template(data);
-    console.log(html)
 
     document.querySelector(selector).innerHTML = html;
 }
 
 renderHTML('featured-news-template','#top-1-story .row');
+renderHTML('latest-news-template','#latest-news-list');
