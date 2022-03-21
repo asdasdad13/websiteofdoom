@@ -14,6 +14,7 @@
     <link rel='stylesheet' href="bootstrap-5.1.3-dist\css\theme_1646910545713.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
     <link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src='index.js'></script>
 </head>
 <body>
     <div class='container-md'>
@@ -80,7 +81,7 @@
             <section class="row news-category-block" id="top-stories-and-latest">
                 <div class="col-md me-2" id="top-4-stories-without-latest">
                     <div class="row">
-                        <h2>
+                        <h2 id="top-1-story-h2">
                             TOP STORIES
                         </h2>
                     </div>
@@ -108,13 +109,14 @@
                             </article>
                             
                         </div>
-                        <div class="col-md-3 latest-stories-container">
+                        <div class="col-md-3" id="latest-stories-container">
                             <h2>
                                 LATEST
                             </h2>
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <article class="card">
+                                    <article>
+                                        <div class="card">
                                         <h4>
                                             WORLD
                                         </h4>
@@ -122,19 +124,15 @@
                                             Oil prices break US$100, S'pore stocks sink as Russia launches military attack on Ukraine
                                         </h3>
                                         <a href='#' class='card-link stretched-link'></a>
+                                        </div>
                                     </article>
                                 </li>
-                                
                             </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
-                
-                
             </section>
         </div>
     </div>
-	<script type="text/javascript" src='index.js'></script>
 </body>
 </html>

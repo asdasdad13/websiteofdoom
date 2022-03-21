@@ -6,13 +6,16 @@ body {
     border-right: 1px solid gray;
 }
 
-#top-4-stories-without-latest h2 {
+#h2-container {
     width: fit-content;
 }
 
 h2 {
     font-family: 'DM Serif Display', serif;
     border-bottom: 1px solid gray;
+}
+
+h2:not(#top-1-story-h2) {
     font-size: 1.7rem;
 }
 
@@ -23,7 +26,6 @@ h3:not(#top-1-story-h3) {
 h4 {
     font-size: 0.7rem;
     color: gray;
-    margin: 0;
 }
 
 article {
@@ -33,6 +35,11 @@ article {
 .card, .list-group-item {
     border: none;
     padding: 0;
+}
+
+#latest-stories-container article {
+    border-bottom: 1px solid gray;
+    padding: 0.5rem 0;
 }
 
 h2, p
