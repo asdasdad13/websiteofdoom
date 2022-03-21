@@ -37,7 +37,7 @@
             </div>
             <nav class='navbar navbar-expand-md navbar-light row pe-0'>
                 <ul class='navbar-nav text-center' aria-hidden="true">
-                    <li class="nav-item col-md"><a class="nav-link" href='#'>Singapore</a></li>
+                    <li class="nav-item col-md"><a class="nav-link" href='#'>Asia</a></li>
                     <li class="nav-item col-md"><a class="nav-link" href='#'>Business</a></li>
                     <li class="nav-item col-md"><a class="nav-link" href='#'>Politics</a></li>
                     <li class="nav-item col-md"><a class="nav-link" href='#'>Tech</a></li>
@@ -93,19 +93,24 @@
                             <article>
                                 <div class="card">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="card-body">
-                                                <h3 class="card-title" id="top-1-story-h3">
-                                                    NYC woman accused of holding online 'date' hostage for $100K in kidnapping, torture plot
-                                                </h3>
-                                                <p class="card-text">
-                                                    Valerie Rosario, 22, is facing charges of kidnapping and attempted murder after allegedly luring the man she met on Instagram.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md">
-                                            <img class='card-img' src="images/tekton-EcE9dFfXwwE-unsplash.jpg"/>
-                                        </div>
+                                        <script type="template/handlebars" id="featured-news">
+                                            {{#each .}}
+                                                {{#articles}}
+                                                    {{#if featured}}
+                                                        <div class="col-md-4">
+                                                            <div class="card-body">
+                                                                <h3 class="card-title" id="top-1-story-h3">{{headline}}</h3>
+                                                                <p class="card-text">{{feature_text}}</p>
+                                                            </div>
+                                                        </div>
+                                                    {{/if}}
+                                                {{/articles}}
+                                                <div class="col-md">
+                                                    <img class='card-img' src={{art-url}}/>
+                                                </div> 
+                                            {{/each}}     
+                                        </script>
+                                        
                                     </div>
                                     <a href='#' class='card-link stretched-link'></a>
                                 </div>
@@ -119,6 +124,22 @@
                                 </h2>
                             </div>
                             <ul class="list-group" id="latest-news-list">
+                                <script type="template/handlebars" id="latest-news-template">
+                                    {{#each news_articles}}
+                                    <li class="list-group-item"></li>
+                                        <article>
+                                            <div class="card">
+                                                <h4>
+                                                    {{this.category}}
+                                                </h4>
+                                                <h3>
+                                                    {{this.headline}}
+                                                </h3>
+                                                <a href='#' class='card-link stretched-link'></a>
+                                            </div>
+                                        </article>
+                                    {{/each}}
+                                </script>
                             </ul>
                         </div>
                     </div>
