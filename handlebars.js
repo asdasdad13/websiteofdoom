@@ -44,7 +44,6 @@ Handlebars.registerHelper('find_featured', function(options) {
         }
     }
 });
-
 var featured_news_template = document.getElementById("featured-news-template").innerHTML;
 var template = Handlebars.compile(featured_news_template);
 var html = template(data);
