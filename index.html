@@ -109,7 +109,24 @@
                                 </div>
                             </article>
                             <div class="row">
-                            
+                                <script type="template/handlebars" id="top-3-stories-template">
+                                    {{#each_upto 3}}
+                                        <div class="col-md">
+                                            <li class="list-group-item">
+                                                <article>
+                                                    <div class="card">
+                                                        <img class='card-img' src='{{art.[0].url}}' alt='article art'/>
+                                                        <h3>
+                                                            {{headline}}
+                                                        </h3>
+                                                        <a href='#' class='card-link stretched-link'></a>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                        </div>
+                                    {{/each_upto}}
+                                </script>
+                                <ul class="list-group" id="top-3-stories"></ul>
                             </div>
                         </div>
                         <div class="col-md-3" id="latest-stories-container">

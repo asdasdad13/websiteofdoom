@@ -1,5 +1,3 @@
-
-
 var data = {
     articles: [ //assume records in this makeshift database are already sorted
         {
@@ -102,5 +100,15 @@ function renderHTML(templateId, selector) {
     document.querySelector(selector).innerHTML = html;
 }
 
+Handlebars.registerHelper('each_upto',function(limit,options) {
+    var ar = [];
+    for (i=0;ar.length<limit;i++) {
+        var a = data.articles[i];
+        if (!a.featured) ar.push(options.fn(a));
+    }
+    return ar.join('');
+});
+
 renderHTML('featured-news-template','#top-1-story .row');
 renderHTML('latest-news-template','#latest-news-list');
+renderHTML('top-3-stories-template','#top-3-stories');
