@@ -12,7 +12,11 @@ function loadBreakingNews() {
 }
 
 function loadDate() {
-    var date = new Date();
+    [day,m,d,y] = getDate(new Date());
+    document.getElementById('current_date').innerHTML = day + ', ' + m + ' ' + d + ', ' + y;
+}
+
+function getDate(date) {
     var y = date.getFullYear();
     switch (date.getMonth())
     {
@@ -78,7 +82,7 @@ function loadDate() {
             day = "SATURDAY";
             break;
     }
-    document.getElementById('current_date').innerHTML = day + ', ' + m + ' ' + d + ', ' + y;
+    return [day,m,d,y];
 }
 
 loadBreakingNews();
