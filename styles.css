@@ -48,7 +48,7 @@ h2, p
     padding: 0;
 }
 
-h2, article, .card-body, .col-md-4 {
+h2, article, .card-body, .col {
     padding: 0 !important;
 }
 
