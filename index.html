@@ -89,17 +89,19 @@
                             <article>
                                 <div class="card">
                                     <script id="featured-news-template" type="text/x-handlebars-template">
-                                        {{#find_featured}}
-                                            <div class="col-md-4">
-                                                <div class="card-body">
-                                                    <h3 class="card-title" id="top-1-story-h3">{{headline}}</h3>
-                                                    <p class="card-text">{{featured_text}}</p>
+                                        {{#each articles}}
+                                            {{#if featured}}
+                                                <div class="col-md-4">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title" id="top-1-story-h3">{{headline}}</h3>
+                                                        <p class="card-text">{{featured_text}}</p>
+                                                    </div>
                                                 </div>
+                                            <div class="col-md">
+                                                <img class='card-img' src='{{art_url}}' alt='article art'/>
                                             </div>
-                                        <div class="col-md">
-                                            <img class='card-img' src='{{art_url}}' alt='article art'/>
-                                        </div>
-                                        {{/find_featured}}
+                                            {{/if}}
+                                        {{/each}}
                                     </script>
                                     <div class="row">
                                     </div>
@@ -115,21 +117,23 @@
                                 </h2>
                             </div>
                             <script type="template/handlebars" id="latest-news-template">
-                                {{#sort latest}}
-                                <li class="list-group-item">
-                                    <article>
-                                        <div class="card">
-                                            <h4>
-                                                {{category}}
-                                            </h4>
-                                            <h3>
-                                                {{headline}}
-                                            </h3>
-                                            <a href='#' class='card-link stretched-link'></a>
-                                        </div>
-                                    </article>
-                                </li>
-                                {{/sort}}
+                                {{#each articles}}
+                                    {{#unless featured}}
+                                        <li class="list-group-item">
+                                            <article>
+                                                <div class="card">
+                                                    <h4>
+                                                        {{category}}
+                                                    </h4>
+                                                    <h3>
+                                                        {{headline}}
+                                                    </h3>
+                                                    <a href='#' class='card-link stretched-link'></a>
+                                                </div>
+                                            </article>
+                                        </li>
+                                    {{/unless}}
+                                {{/each}}
                             </script>
                             <ul class="list-group" id="latest-news-list"></ul>
                         </div>

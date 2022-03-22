@@ -81,6 +81,5 @@ function loadDate() {
     document.getElementById('current_date').innerHTML = day + ', ' + m + ' ' + d + ', ' + y;
 }
 
-
 loadBreakingNews();
 loadDate();
