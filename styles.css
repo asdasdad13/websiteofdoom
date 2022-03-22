@@ -28,8 +28,8 @@ h4 {
     color: gray;
 }
 
-article {
-    padding: 1rem 1rem 1rem 0;
+.article-container {
+    padding: 0.5rem 0;
 }
 
 .card, .list-group-item {
@@ -37,9 +37,8 @@ article {
     padding: 0;
 }
 
-#latest-stories-container article {
+#latest-stories-container .article-container {
     border-bottom: 1px solid gray;
-    padding: 0.5rem 0;
 }
 
 h2, p
@@ -47,7 +46,7 @@ h2, p
     margin: 0;
 }
 
-h2, h4, .row, .card-body, .col, .card-img {
+article, .card-body, .col-md-4 {
     padding: 0 !important;
 }
 
@@ -71,6 +70,17 @@ h2, h4, .row, .card-body, .col, .card-img {
 {
     background-color: #A30F15;
     color: #FFFFFF;
+}
+
+#top-3-stories .article-container ::after {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    top: -1rem;
+    bottom: -1rem;
+}
+
+#top-3-stories div:nth-of-type(1) .article-container, #top-3-stories div:nth-of-type(2) .article-container {
+    border-right: 1px solid green;
 }
 
 @media screen and (min-width: 768px)
