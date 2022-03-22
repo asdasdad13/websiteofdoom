@@ -143,6 +143,6 @@ Handlebars.registerHelper('each_upto',function(limit,options) {
     return ar.join('');
 });
 
-renderHTML('featured-news-template','#top-1-story .row');
+renderHTML('featured-news-template','#top-4-stories .row');
 renderHTML('latest-news-template','#latest-news-col');
-renderHTML('top-3-stories-template','#top-3-stories');
+renderHTML('bottom-3-stories-template','#bottom-3-stories');
