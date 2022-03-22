@@ -1,3 +1,5 @@
+
+
 var data = {
     articles: [ //assume records in this makeshift database are already sorted
         {
@@ -8,21 +10,33 @@ var data = {
             related_topics: ['Ukraine Invasion', 'Ukraine', 'Russia', 'Turkey','Vladimir Putin'],
             featured: false,
             featured_tagline: '',
-            art_url: 'images/IMG_1652.png',
-            caption: 'Russians against war charity concert in Istanbul. Photo courtesy of the author.',
-            date: new Date('2022-03-18T16:29:00Z')
+            art: [
+                {
+                    url: 'images/IMG_1652.png',
+                    caption: 'Russians against war charity concert in Istanbul. Photo courtesy of the author.'
+                },
+                {
+                    url: 'images/IMG_1625-scaled.jpeg',
+                    caption: 'Evgeniy, holding his sign outside the concert venue. Photo courtesy of the author.'
+                }
+            ],
+            date: new Date('2022-03-18T16:29:00Z'),
         },
         {
-            headline: "Russia invades Ukraine",
-            author: '',
-            tagline: '',
+            headline: "Turkmen students: Escaping from war-torn Ukraine",
+            author: ['Oguljamal Yazliyeva','Shirin Rahman'],
+            tagline: 'With little government support, Turkmen students turned to social media',
             category: 'WORLD',
-            related_topics: ['Ukraine Invasion', 'Ukraine', 'Russia', 'Turkey','Vladimir Putin'],
+            related_topics: ['Ukraine Invasion', 'Ukraine', 'Turkmenistan','Central Asia & Caucasus'],
             featured: true,
             featured_tagline: 'Russia\'s brazen invasion of Ukraine marks a dangerous new phase in the history of Eastern Europe, with serious implications for the post-Cold War ...',
-            art_url: 'images/juli-kosolapova--KvnD87yD88-unsplash.jpg',
-            caption: 'Image courtesy of Juli Kosolapova.',
-            date: ''
+            art: [
+                {
+                    url: 'images/',
+                    caption: '.'
+                }
+            ],
+            date: '',
         },
     ]
 }
@@ -34,6 +48,7 @@ function renderHTML(templateId, selector) {
 
     document.querySelector(selector).innerHTML = html;
 }
-console.log('/articles/"Russia invades Ukraine.txt"')
+
+console.log(data.articles[0].body)
 renderHTML('featured-news-template','#top-1-story .row');
 renderHTML('latest-news-template','#latest-news-list');
