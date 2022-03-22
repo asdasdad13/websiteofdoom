@@ -1,53 +1,29 @@
 var data = {
     articles: [ //assume records in this makeshift database are already sorted
         {
-            headline: "Nations vet 3,000-page handbook to halt climate crisis",
-            author: '',
-            category: 'ASIA',
+            headline: "Russians against war are fleeing state crackdowns",
+            author: 'Arzu Geybullayeva',
+            tagline: 'Turkey is one of a handful of countries welcoming Russians',
+            category: 'WORLD',
+            related_topics: ['Ukraine Invasion', 'Ukraine', 'Russia', 'Turkey','Vladimir Putin'],
             featured: false,
-            art_url: 'images/patrick-hendry-6xeDIZgoPaw-unsplash.jpg',
-            date: '21 MAR 2022',
-            digital_date: new Date('03/21/2022 12:00:00 AM')
+            featured_tagline: '',
+            art_url: 'images/IMG_1652.png',
+            caption: 'Russians against war charity concert in Istanbul. Photo courtesy of the author.',
+            date: new Date('2022-03-18T16:29:00Z')
         },
         {
-            headline: "Oil prices break US$100, S'pore stocks sink as Russia launches military attack on Ukraine",
+            headline: "Russia invades Ukraine",
             author: '',
-            category: 'BUSINESS',
-            featured: false,
-            art_url: 'images/maria-lupan-hy97yy3e03A-unsplash.jpg',
-            date: '24 FEB 2022',
-            digital_date: new Date('02/24/2022 12:00:00 AM')
-        },
-        {
-            headline: "Hong Kong to lift flight ban on 9 countries in April, cut quarantine to 7 days for travellers",
-            author: '',
-            category: 'ASIA',
+            tagline: '',
+            category: 'WORLD',
+            related_topics: ['Ukraine Invasion', 'Ukraine', 'Russia', 'Turkey','Vladimir Putin'],
             featured: true,
-            featured_text: 'Up to 4 people will be allowed for public gatherings, up from the current 2.',
-            art_url: 'images/marco-lopez-qK6HAkB91Yc-unsplash.jpg',
-            date: '21 MAR 2022',
-            digital_date: new Date('03/21/2022 12:00:00 AM')
+            featured_tagline: 'Russia\'s brazen invasion of Ukraine marks a dangerous new phase in the history of Eastern Europe, with serious implications for the post-Cold War ...',
+            art_url: 'images/juli-kosolapova--KvnD87yD88-unsplash.jpg',
+            caption: 'Image courtesy of Juli Kosolapova.',
+            date: ''
         },
-        {
-            headline: "Opinion: Cryptocurrencies have huge appeal despite holes",
-            author: 'Cindy Deng Xin',
-            category: 'ASIA',
-            featured: true,
-            featured_text: 'Up to 4 people will be allowed for public gatherings, up from the current 2.',
-            art_url: 'images/marco-lopez-qK6HAkB91Yc-unsplash.jpg',
-            date: '21 MAR 2022',
-            digital_date: new Date('03/21/2022 12:00:00 AM')
-        },
-        {
-            headline: "Hong Kong to lift flight ban on 9 countries in April, cut quarantine to 7 days for travellers",
-            author: '',
-            category: 'ASIA',
-            featured: true,
-            featured_text: 'Up to 4 people will be allowed for public gatherings, up from the current 2.',
-            art_url: 'images/marco-lopez-qK6HAkB91Yc-unsplash.jpg',
-            date: '21 MAR 2022',
-            digital_date: new Date('03/21/2022 12:00:00 AM')
-        }
     ]
 }
 
@@ -58,6 +34,6 @@ function renderHTML(templateId, selector) {
 
     document.querySelector(selector).innerHTML = html;
 }
-
+console.log('/articles/"Russia invades Ukraine.txt"')
 renderHTML('featured-news-template','#top-1-story .row');
 renderHTML('latest-news-template','#latest-news-list');
