@@ -86,11 +86,8 @@ h2, article, .col {
     color: #FFFFFF;
 }
 
-#bottom-3-stories .article-container ::after {
-    /* border-top: 1px solid red;
-    border-bottom: 1px solid red;
-    top: -1rem;
-    bottom: -1rem; */
+#bottom-3-stories .article-container {
+    padding:1rem;
 }
 
 #bottom-3-stories div:nth-of-type(1) .article-container, #bottom-3-stories div:nth-of-type(2) .article-container {
