@@ -13,20 +13,17 @@ body {
 }
 
 .card {
-    border: 1px solid red;
+    border: none;
+    border-top: 1rem;
+    border-radius: 0;
 }
 
-.card {
-    border:none;
-}
-
-h2, article, .col, .col-md, .col-md-4, .card-body, .flex-row, ul  {
-    padding: 0 !important;
-}
-h2, p
-{
+h3, #latest-stories-container .card-body, #latest-stories-container .card-title, #breaking-news-title {
     margin: 0;
-    padding: 0;
+}
+
+h2, p, .col, .col-md, .col-md-4, .card-body, .flex-row, ul  {
+    padding: 0 !important;
 }
 
 a, a:hover {
@@ -35,7 +32,7 @@ a, a:hover {
 }
 
 #top-4-stories {
-    border-right: solid 1px gray;
+    border-right: 1px solid gray;
 }
 
 h2 {
@@ -52,8 +49,25 @@ h2:not(#top-4-stories-h2-container h2) {
     font-size: 1.7rem;
 }
 
-h3:not(#top-1-story-h3) {
+h3 {
+    font-size: 1.4rem;
+}
+
+#top-1-story h3 {
+    font-size: 2rem;
+}
+
+#latest-news-col h3 {
     font-size: 1rem;
+}
+
+#top-stories-and-latest {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+}
+
+#top-stories-and-latest .row {
+    width: fit-content;
 }
 
 h4 {
@@ -61,13 +75,12 @@ h4 {
     color: gray;
 }
 
-#top-4-stories-h2-container * {
-    width: fit-content;
-}
-
 #latest-stories-container .article-container {
     border-bottom: 1px solid gray;
-    padding: 0.5rem 0;
+}
+
+#latest-stories-container .card {
+    padding: 1rem 0;
 }
 
 .card-title:hover {
@@ -78,9 +91,9 @@ h4 {
     margin-top: 1rem;
 }
 
-#breaking-news-content
-{
+#breaking-news-content {
     background-color: #FFE6DA;
+    height: fit-content;
 }
 
 #breaking-news-list
@@ -94,14 +107,32 @@ h4 {
 {
     background-color: #A30F15;
     color: #FFFFFF;
+    height: fit-content;
 }
 
-#bottom-3-stories .article-container {
-    padding:1rem;
+.card-hori-border {
+    width: fit-content;
 }
 
-#bottom-3-stories div:nth-of-type(1) .article-container, #bottom-3-stories div:nth-of-type(2) .article-container {
-    border-right: 1px solid green;
+#bottom-3-stories div:nth-of-type(2) .card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+#bottom-3-stories div:nth-of-type(2) .card::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid red;
+}
+
+#bottom-3-stories .card-img-top {
+    padding-top: 1rem;
+}
+
+#bottom-3-stories .card {
+    border-top: 1px solid gray;
 }
 
 @media screen and (min-width: 768px)

@@ -64,7 +64,7 @@
         <div class="row text-center border-bottom justify-content-center" id="time-banner">
             <time id="current_date"></time>
         </div>
-        <div class="row">
+        <div class="row my-3">
             <div class="d-flex flex-row" id="breaking-news">
                 <div class='p-2' id="breaking-news-ticker">
                     <p id="breaking-news-title">BREAKING:</p>
@@ -76,8 +76,8 @@
         </div>
 
         <div id="main-content">
-            <section class="news-category-block" id="top-stories-and-latest">
-                <div class="row" id="top-4-stories-h2-container">
+            <section class="news-category-block row" id="top-stories-and-latest">
+                <div class="row">
                     <h2>
                         TOP STORIES
                     </h2>
@@ -93,7 +93,7 @@
                                                 <div class="col-md-4">
                                                     <div class="card-body">
                                                         <div class="card-title">
-                                                            <h3 id="top-1-story-h3">
+                                                            <h3>
                                                                 <a href='#' class='stretched-link'>
                                                                     {{headline}}
                                                                 </a>
@@ -115,7 +115,7 @@
                         <script type="template/handlebars" id="bottom-3-stories-template">
                             {{#each_upto 3}}
                                 <div class="col-md article-container">
-                                    <article>
+                                    <article class='h-100'>
                                         <div class="card">
                                             <img height=170px class='card-img-top' src='{{art.[0].url}}' alt='article art'/>
                                             <div class='card-body'>
@@ -132,9 +132,9 @@
                                 </div>
                             {{/each_upto}}
                         </script>
-                        <div class='row g-0' id="bottom-3-stories"></div>
+                        <div class='row g-0 pt-3 pe-3' id="bottom-3-stories"></div>
                     </div>
-                    <div class="col-md-3 px-3" id="latest-stories-container">
+                    <div class="col-md-3 ps-3 pe-0" id="latest-stories-container">
                         <h2>
                             LATEST
                         </h2>
@@ -164,7 +164,7 @@
                                 {{/unless}}
                             {{/each}}
                         </script>
-                        <div class="col-md" id="latest-news-col"></ul>
+                        <div class="col-md" id="latest-news-col"></div>
                     </div>
                 </div>
             </section>
