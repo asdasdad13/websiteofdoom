@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel='stylesheet' href="bootstrap-5.1.3-dist\css\theme_1646910545713.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -85,7 +84,7 @@
                 </div>
                 <div class="row">
                     <div class="col" id="top-4-stories">
-                        <div class='article-container pe-3 top-1-story'>
+                        <div class='article-container row pe-3 py-3 position-relative' id="top-1-story">
                             <article>
                                 <div class="card">
                                     <script id="featured-news-template" type="text/x-handlebars-template">
@@ -93,7 +92,13 @@
                                             {{#if featured}}
                                                 <div class="col-md-4">
                                                     <div class="card-body">
-                                                        <h3 class="card-title" id="top-1-story-h3">{{headline}}</h3>
+                                                        <div class="card-title">
+                                                            <h3 id="top-1-story-h3">
+                                                                <a href='#' class='stretched-link'>
+                                                                    {{headline}}
+                                                                </a>
+                                                            </h3>
+                                                        </div>
                                                         <p class="card-text">{{featured_tagline}}</p>
                                                     </div>
                                                 </div>
@@ -103,26 +108,28 @@
                                             {{/if}}
                                         {{/each}}
                                     </script>
-                                    <div class="row" id=""></div>
-                                    <a href='#' class='card-link stretched-link'></a>
+                                    <div class="row position-relative" id=""></div>
                                 </div>
                             </article>
                         </div>
                         
                         <script type="template/handlebars" id="bottom-3-stories-template">
                             {{#each_upto 3}}
-                                <div class="col-md">
-                                    <div class='article-container'>
-                                        <article>
-                                            <div class="card">
-                                                <img height=170px class='card-img' src='{{art.[0].url}}' alt='article art'/>
-                                                <h3>
-                                                    {{headline}}
-                                                </h3>
-                                                <a href='#' class='card-link stretched-link'></a>
+                                <div class="col-md article-container">
+                                    <article>
+                                        <div class="card">
+                                            <img height=170px class='card-img-top' src='{{art.[0].url}}' alt='article art'/>
+                                            <div class='card-body'>
+                                                <div class='card-title'>
+                                                    <h3>
+                                                        <a href='#' class='stretched-link'>
+                                                            {{headline}}
+                                                        </a>
+                                                    </h3>
+                                                </div>
                                             </div>
-                                        </article>
-                                    </div>
+                                        </div>
+                                    </article>
                                 </div>
                             {{/each_upto}}
                         </script>
@@ -141,17 +148,22 @@
                                             <h4>
                                                 {{category}}
                                             </h4>
-                                            <h3>
-                                                {{headline}}
-                                            </h3>
-                                            <a href='#' class='card-link stretched-link'></a>
+                                            <div class='card-body'>
+                                                <div class='card-title'>
+                                                    <h3>
+                                                        <a href='#' class='stretched-link'>
+                                                            {{headline}}
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                            </div>
                                         </div>
                                     </article>
                                 </div>
                                 {{/unless}}
                             {{/each}}
                         </script>
-                        <div class="col" id="latest-news-col"></ul>
+                        <div class="col-md" id="latest-news-col"></ul>
                     </div>
                 </div>
             </section>
