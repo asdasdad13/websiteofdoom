@@ -85,7 +85,7 @@
                 </div>
                 <div class="row">
                     <div class="col" id="top-4-stories">
-                        <div class='article-container'>
+                        <div class='article-container pe-3 top-1-story'>
                             <article>
                                 <div class="card">
                                     <script id="featured-news-template" type="text/x-handlebars-template">
@@ -93,7 +93,7 @@
                                             {{#if featured}}
                                                 <div class="col-md-4">
                                                     <div class="card-body">
-                                                        <h3 class="card-title" id="top-4-stories-h3">{{headline}}</h3>
+                                                        <h3 class="card-title" id="top-1-story-h3">{{headline}}</h3>
                                                         <p class="card-text">{{featured_tagline}}</p>
                                                     </div>
                                                 </div>
@@ -103,7 +103,7 @@
                                             {{/if}}
                                         {{/each}}
                                     </script>
-                                    <div class="row"></div>
+                                    <div class="row" id=""></div>
                                     <a href='#' class='card-link stretched-link'></a>
                                 </div>
                             </article>
@@ -126,7 +126,7 @@
                                 </div>
                             {{/each_upto}}
                         </script>
-                        <div class="row" id="bottom-3-stories"></div>
+                        <div class="row py-2" id="bottom-3-stories"></div>
                     </div>
                     <div class="col-md-3" id="latest-stories-container">
                         <h2>
