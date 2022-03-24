@@ -13,12 +13,16 @@ body {
 }
 
 .card {
+    border: 1px solid green;
+}
+
+.card {
     border: none;
     border-top: 1rem;
     border-radius: 0;
 }
 
-h3, #latest-stories-container .card-body, #latest-stories-container .card-title, #breaking-news-title {
+h3, #latest-news-col .card-body, #latest-news-col .card-title, #breaking-news-title {
     margin: 0;
 }
 
@@ -71,12 +75,9 @@ h4 {
     color: gray;
 }
 
-#latest-stories-container .article-container {
+#latest-news-col-article-container:not(:last-of-type) {
     border-bottom: 1px solid gray;
-}
-
-#latest-stories-container .card {
-    padding: 1rem 0;
+    padding-bottom: 1rem;
 }
 
 .card-title:hover {
@@ -106,47 +107,46 @@ h4 {
     height: fit-content;
 }
 
-.card-hori-border {
-    width: fit-content;
+#bottom-3-stories article, #bottom-3-stories .card-story, #bottom-3-stories .card {
+    height: 100% !important;
 }
 
-#bottom-3-stories div:nth-of-type(1) .card {
+#bottom-3-stories div:nth-of-type(1) .card-story {
     margin-right: 1rem;
+    height: 100%;
 }
 
-#bottom-3-stories div:nth-of-type(2) .card {
+#bottom-3-stories div:nth-of-type(2) .card-story {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-#bottom-3-stories div:nth-of-type(3) .card {
+#bottom-3-stories div:nth-of-type(3) .card-story {
     margin-left: 1rem;
 }
 
-#bottom-3-stories div:nth-of-type(2) .card-img-body::after {
+#bottom-3-stories div:nth-of-type(2) .card::after {
     content: '';
     position: absolute;
     height: 100%;
-    top: 1rem;
     left: -1rem;
     border-left: 1px solid gray;
 }
 
-#bottom-3-stories div:nth-of-type(3) .card-img-body::after {
+#bottom-3-stories div:nth-of-type(3) .card::after {
     content: '';
     position: absolute;
     height: 100%;
-    top: 1rem;
     left: -1rem;
     border-left: 1px solid gray;
 }
 
-#bottom-3-stories .card {
+#bottom-3-stories .card-story {
     border-top: 1px solid gray;
 }
 
-#bottom-3-stories .card-img-body {
-    margin-top: 1rem;
+#bottom-3-stories .card-story {
+    padding-top: 1rem;
 }
 
 @media screen and (min-width: 768px)

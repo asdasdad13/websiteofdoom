@@ -131,7 +131,7 @@ function renderHTML(templateId, selector) {
     var template = Handlebars.compile(src);
     var html = template(data);
 
-    document.querySelector(selector).innerHTML = html;
+    document.querySelector(selector).innerHTML += html;
 }
 
 Handlebars.registerHelper('each_upto',function(limit,options) {
@@ -144,5 +144,5 @@ Handlebars.registerHelper('each_upto',function(limit,options) {
 });
 
 renderHTML('featured-news-template','#top-4-stories .row');
-renderHTML('latest-news-template','#latest-news-col');
+renderHTML('latest-news-template','#latest-news-col-articles');
 renderHTML('bottom-3-stories-template','#bottom-3-stories');

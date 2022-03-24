@@ -76,19 +76,19 @@
         </div>
 
         <div id="main-content">
-            <section class="news-category-block row" id="top-stories-and-latest">
-                <div class="row">
-                    <h2>
-                        TOP STORIES
-                    </h2>
-                </div>
-                <div class="row">
-                    <div class="col-md" id="top-4-stories">
-                        <div class='row pt-3 me-3 g-0 position-relative' id="top-1-story">
-                            <article>
-                                <div class="card">
-                                    <div class="article-container">
-                                        <script id="featured-news-template" type="text/x-handlebars-template">
+            <section class="news-category">
+                <div class="row news-category-content" id="top-stories-and-latest">
+                    <div class="row">
+                        <h2>
+                            TOP STORIES
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md" id="top-4-stories">
+                            <div class='row pt-3 me-3 g-0 position-relative' id="top-1-story">
+                                <article>
+                                    <div class="card">
+                                        <script id="featured-news-template" type="template/handlebars">
                                             {{#each articles}}
                                             {{#if featured}}
                                             <div class="col-md-4">
@@ -109,54 +109,47 @@
                                         </script>
                                         <div class="row position-relative"></div>
                                     </div>
-                                </div>
-                            </article>
-                        </div>
-                        <script type="template/handlebars" id="bottom-3-stories-template">
-                            {{#each_upto 3}}
-                                <div class="col-md article-container">
-                                    <article class='h-100'>
-                                        <div class="card h-100">
-                                            <div class='card-img-body'>
-                                                <img height=170px class='card-img-top' src='{{art.[0].url}}' alt='article art'/>
-                                                <div class='card-body'>
-                                                    <div class='card-title'>
-                                                        <h3>
-                                                            <a href='#' class='stretched-link'>
-                                                                {{headline}}
-                                                            </a>
-                                                        </h3>
+                                </article>
+                            </div>
+                            <script type="template/handlebars" id="bottom-3-stories-template">
+                                {{#each_upto 3}}
+                                    <div class="col-md">
+                                        <article>
+                                            <div class='card-story'>
+                                                <div class="card">
+                                                    <img height=170px class='card-img-top' src='{{art.[0].url}}' alt='article art'/>
+                                                    <div class='card-body'>
+                                                        <div class='card-title'>
+                                                            <h3>
+                                                                <a href='#' class='stretched-link'>{{headline}}</a>
+                                                            </h3>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            {{/each_upto}}
-                        </script>
-                        <div class='row g-0 mt-3 pe-3' id="bottom-3-stories"></div>
-                    </div>
-                    <div class="col-md-3 ps-3 pe-0" id="latest-stories-container">
-                        <h2>
-                            LATEST
-                        </h2>
-                        <script type="template/handlebars" id="latest-news-template">
-                            {{#each articles}}
+                                        </article>
+                                    </div>
+                                {{/each_upto}}
+                            </script>
+                            <div class='row g-0 mt-3 pe-3' id="bottom-3-stories"></div>
+                        </div>
+                        <div class="col-md-3 pe-0 ms-2 d-flex flex-column" id="latest-news-col">
+                            <h2>
+                                LATEST
+                            </h2>
+                            <script type="template/handlebars" id="latest-news-template">
+                                {{#each articles}}
                                 {{#unless featured}}
-                                <div class='article-container'>
+                                <div class='row-md' id='latest-news-col-article-container'>
                                     <article>
                                         <div class="card">
                                             <h4>
-                                                <a href='#'>
-                                                    {{category}}
-                                                </a>
+                                                <a href='#'>{{category}}</a>
                                             </h4>
                                             <div class='card-body'>
                                                 <div class='card-title'>
                                                     <h3>
-                                                        <a href='#' class='stretched-link'>
-                                                            {{headline}}
-                                                        </a>
+                                                        <a href='#' class='stretched-link'>{{headline}}</a>
                                                     </h3>
                                                 </div>
                                             </div>
@@ -164,10 +157,17 @@
                                     </article>
                                 </div>
                                 {{/unless}}
-                            {{/each}}
-                        </script>
-                        <div class="col-md" id="latest-news-col"></div>
+                                {{/each}}
+                            </script>
+                            <div class="col d-flex flex-column justify-content-around" id="latest-news-col-articles"></div>
+                        </div>
                     </div>
+                </div>
+                <div class="row float-end">
+                    <a href='#' class="btn" role="button">
+                        VIEW MORE LATEST STORIES
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
                 </div>
             </section>
         </div>
