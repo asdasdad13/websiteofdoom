@@ -45,10 +45,6 @@ h2 {
     margin: 0;
 }
 
-h2:not(#top-4-stories-h2-container h2) {
-    font-size: 1.7rem;
-}
-
 h3 {
     font-size: 1.4rem;
 }
@@ -114,25 +110,43 @@ h4 {
     width: fit-content;
 }
 
-#bottom-3-stories div:nth-of-type(2) .card {
-    padding-left: 1rem;
-    padding-right: 1rem;
-
+#bottom-3-stories div:nth-of-type(1) .card {
+    margin-right: 1rem;
 }
 
-#bottom-3-stories div:nth-of-type(2) .card::after {
+#bottom-3-stories div:nth-of-type(2) .card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#bottom-3-stories div:nth-of-type(3) .card {
+    margin-left: 1rem;
+}
+
+#bottom-3-stories div:nth-of-type(2) .card-img-body::after {
     content: '';
     position: absolute;
     height: 100%;
-    border-left: 1px solid red;
+    top: 1rem;
+    left: -1rem;
+    border-left: 1px solid gray;
 }
 
-#bottom-3-stories .card-img-top {
-    padding-top: 1rem;
+#bottom-3-stories div:nth-of-type(3) .card-img-body::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 1rem;
+    left: -1rem;
+    border-left: 1px solid gray;
 }
 
 #bottom-3-stories .card {
     border-top: 1px solid gray;
+}
+
+#bottom-3-stories .card-img-body {
+    margin-top: 1rem;
 }
 
 @media screen and (min-width: 768px)
