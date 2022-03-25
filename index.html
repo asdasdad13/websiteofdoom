@@ -107,78 +107,177 @@
                             <div class='row pt-3 me-1' id="top-1-story">
                                 <article>
                                     <div class="card">
-                                        <script id="top-1-news-template" type="template/handlebars">
-                                            {{#each articles}}
-                                            {{#if featured_top_1}}
+                                        <div class="row g-0">
                                             <div class="col-md-4">
                                                 <div class="card-body">
                                                     <div class="card-title">
                                                         <h3>
-                                                            <a href='#' class='stretched-link'>{{headline}}</a>
+                                                            <a href='#' class='stretched-link'>Russians against war are fleeing state crackdowns</a>
                                                         </h3>
                                                     </div>
-                                                    <p class="card-text">{{featured_top_1_tagline}}</p>
+                                                    <p class="card-text">Turkey is one of a handful of countries welcoming Russians.</p>
                                                 </div>
                                             </div>
                                             <div class="col-md">
-                                                <img class='card-img' src='{{art.[0].url}}' alt='article art'/>
+                                                <img class='card-img' src='images/IMG_1652.png' alt='article art'/>
                                             </div>
-                                            {{/if}}
-                                            {{/each}}
-                                        </script>
-                                        <div class="row g-0"></div>
+                                        </div>
                                     </div>
                                 </article>
                             </div>
-                            <script type="template/handlebars" id="bottom-3-stories-template">
-                                {{#each_upto 3}}
-                                    <div class="col-md">
-                                        <article>
-                                            <div class='card-story'>
-                                                <div class="card">
-                                                    <img height=170px class='card-img-top' src='{{art.[0].url}}' alt='article art'/>
-                                                    <div class='card-body'>
-                                                        <div class='card-title'>
-                                                            <h3>
-                                                                <a href='#' class='stretched-link'>{{headline}}</a>
-                                                            </h3>
-                                                        </div>
+                            <div class='row g-0 mt-3 pe-3' id="bottom-3-stories">
+                                <div class="col-md">
+                                    <article>
+                                        <div class='card-story'>
+                                            <div class="card">
+                                                <img height=170px class='card-img-top' src='images/audrius-sutkus-cJ7A2SwC9tU-unsplash.jpg' alt='article art'/>
+                                                <div class='card-body'>
+                                                    <div class='card-title'>
+                                                        <h3>
+                                                            <a href='#' class='stretched-link'>Has Turkey dodged its sunflower oil crisis?</a>
+                                                        </h3>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </article>
-                                    </div>
-                                {{/each_upto}}
-                            </script>
-                            <div class='row g-0 mt-3 pe-3' id="bottom-3-stories"></div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md">
+                                    <article>
+                                        <div class='card-story'>
+                                            <div class="card">
+                                                <img height=170px class='card-img-top' src='images/Screen-Shot-2022-03-10-at-10.42.12-AM-800x396.png' alt='article art'/>
+                                                <div class='card-body'>
+                                                    <div class='card-title'>
+                                                        <h3>
+                                                            <a href='#' class='stretched-link'>Can Ukraine's internet sustain longer-term attacks and destruction from Russia?</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md">
+                                    <article>
+                                        <div class='card-story'>
+                                            <div class="card">
+                                                <img height=170px class='card-img-top' src='images/birthday-poster-800x479.jpg' alt='article art'/>
+                                                <div class='card-body'>
+                                                    <div class='card-title'>
+                                                        <h3>
+                                                            <a href='#' class='stretched-link'>How one birthday party sparked an outpouring of anger and resentment in Hong Kong</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-3 pe-0 ps-3 d-flex flex-column" id="latest-news-col">
                             <h2>
                                 LATEST
                             </h2>
-                            <script type="template/handlebars" id="latest-news-template">
-                                {{#each articles}}
-                                {{#unless featured_top_1}}
-                                <div class='row-md' id='latest-news-col-article-container'>
+                            <div class="col d-flex flex-column justify-content-around" id="latest-news-col-articles">
+                                <div class='row-md d-flex align-items-center' id='latest-news-col-article-container'>
                                     <article>
-                                        <div class="card">
+                                        <div class="card article-category">
                                             <h4>
-                                                <a href='#'>{{category}}</a>
+                                                <a href='#'>WORLD</a>
                                             </h4>
                                             <div class='card-body'>
                                                 <div class='card-title'>
                                                     <h3>
-                                                        <a href='#' class='stretched-link'>{{headline}}</a>
+                                                        <a href='#' class='stretched-link'>Turkmen students: Escaping from war-torn Ukraine</a>
                                                     </h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </article>
                                 </div>
-                                {{/unless}}
-                                {{/each}}
-                            </script>
-                            <div class="col d-flex flex-column justify-content-around" id="latest-news-col-articles"></div>
+                                <div class='row-md' id='latest-news-col-article-container'>
+                                    <article>
+                                        <div class="card article-category">
+                                            <h4>
+                                                <a href='#'>TECH</a>
+                                            </h4>
+                                            <div class='card-body'>
+                                                <div class='card-title'>
+                                                    <h3>
+                                                        <a href='#' class='stretched-link'>Can Ukraine's internet sustain longer-term attacks and destruction from Russia?</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class='row-md' id='latest-news-col-article-container'>
+                                    <article>
+                                        <div class="card article-category">
+                                            <h4>
+                                                <a href='#'>BUSINESS</a>
+                                            </h4>
+                                            <div class='card-body'>
+                                                <div class='card-title'>
+                                                    <h3>
+                                                        <a href='#' class='stretched-link'>Has Turkey dodged its sunflower oil crisis?</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class='row-md' id='latest-news-col-article-container'>
+                                    <article>
+                                        <div class="card article-category">
+                                            <h4>
+                                                <a href='#'>WORLD</a>
+                                            </h4>
+                                            <div class='card-body'>
+                                                <div class='card-title'>
+                                                    <h3>
+                                                        <a href='#' class='stretched-link'>Turkmen students: Escaping from war-torn Ukraine</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class='row-md' id='latest-news-col-article-container'>
+                                    <article>
+                                        <div class="card article-category">
+                                            <h4>
+                                                <a href='#'>TECH</a>
+                                            </h4>
+                                            <div class='card-body'>
+                                                <div class='card-title'>
+                                                    <h3>
+                                                        <a href='#' class='stretched-link'>Can Ukraine's internet sustain longer-term attacks and destruction from Russia?</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class='row-md' id='latest-news-col-article-container'>
+                                    <article>
+                                        <div class="card article-category">
+                                            <h4>
+                                                <a href='#'>BUSINESS</a>
+                                            </h4>
+                                            <div class='card-body'>
+                                                <div class='card-title'>
+                                                    <h3>
+                                                        <a href='#' class='stretched-link'>Has Turkey dodged its sunflower oil crisis?</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,6 +286,32 @@
                         VIEW MORE LATEST STORIES
                         <i class="fas fa-chevron-right" aria-hidden="true"></i></i>
                     </a>
+                </div>
+            </section>
+            <section class="news-category">
+                <div class="row" id="some-news-category-block">
+                    <script id='some-news-template' type="template/handlebars">
+                        <div class="col bg-success">
+                            <div class="row">
+                                {{#try}}
+                                {{/try}}
+                            </div>
+                            <div class="row">
+                                a2
+                            </div>
+                        </div>
+                        <div class="col-md-6 bg-primary">
+                            b
+                        </div>
+                        <div class="col bg-danger">
+                            <div class="row">
+                                c1
+                            </div>
+                            <div class="row">
+                                c2
+                            </div>
+                        </div>
+                    </script>
                 </div>
             </section>
         </div>

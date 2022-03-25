@@ -31,6 +31,7 @@ var data = {
             related_topics: ['Economics & Business','Food','Politics','War & Conflict'],
             featured_top_1: false,
             featured_top_1_tagline: '',
+            featured_bottom_3: true,
             art: [
                 {
                     url: 'images/audrius-sutkus-cJ7A2SwC9tU-unsplash.jpg',
@@ -48,6 +49,7 @@ var data = {
             related_topics: ['Breaking News','Censorship','Freedom of Speech','Governance','Human Rights','Law','Politic','sProtest','Youth'],
             featured_top_1: false,
             featured_top_1_tagline: '',
+            featured_bottom_3: true,
             art: [
                 {
                     url: 'images/Screen-Shot-2022-03-10-at-10.42.12-AM-800x396.png',
@@ -65,6 +67,7 @@ var data = {
             related_topics: ['Ukraine Invasion', 'Humanitarian Response','International Relations','Migration & Immigration','Refugees','War & Conflict','Youth'],
             featured_top_1: false,
             featured_top_1_tagline: '',
+            featured_bottom_3: false,
             art: [
                 {
                     url: 'images/04b4ef01-482a-4d28-a566-c38c28b401ed-800x434.jpg',
@@ -82,40 +85,7 @@ var data = {
             related_topics: ['Governance','Health','Law','Politics','COVID-19'],
             featured_top_1: false,
             featured_top_1_tagline: '',
-            art: [
-                {
-                    url: 'images/birthday-poster-800x479.jpg',
-                    caption: 'Witman Hung\'s birthday party poster via inmediahk.net'
-                }
-            ],
-            date: new Date('2022-01-10T10:24:00Z'),
-        },
-        {
-            headline: "Turkmen students: Escaping from war-torn Ukraine",
-            author: ['Oguljamal Yazliyeva','Shirin Rahman'],
-            tagline: 'With little government support, Turkmen students turned to social media',
-            category: 'WORLD',
-            related_geographical: ['Central Asia & Caucasus','Turkmenistan','Ukraine'],
-            related_topics: ['Ukraine Invasion', 'Humanitarian Response','International Relations','Migration & Immigration','Refugees','War & Conflict','Youth'],
-            featured_top_1: false,
-            featured_top_1_tagline: '',
-            art: [
-                {
-                    url: 'images/04b4ef01-482a-4d28-a566-c38c28b401ed-800x434.jpg',
-                    caption: 'Turkmen students from Kharkov in makeshift housing. Photo courtesy of Vasile Vlaşin.'
-                }
-            ],
-            date: new Date('2022-03-10T00:59:00Z'),
-        },
-        {
-            headline: "How one birthday party sparked an outpouring of anger and resentment in Hong Kong",
-            author: ['Oiwan Lam'],
-            tagline: 'A dozen officials attended the party, in violation of pandemic-control rules',
-            category: 'POLITICS',
-            related_geographical: ['East Asia','China','Hong Kong (China)'],
-            related_topics: ['Governance','Health','Law','Politics','COVID-19'],
-            featured_top_1: false,
-            featured_top_1_tagline: '',
+            featured_bottom_3: true,
             art: [
                 {
                     url: 'images/birthday-poster-800x479.jpg',
@@ -144,6 +114,8 @@ Handlebars.registerHelper('each_upto',function(limit,options) {
     return ar.join('');
 });
 
-renderHTML('top-1-news-template','#top-1-story .row');
-renderHTML('latest-news-template','#latest-news-col-articles');
-renderHTML('bottom-3-stories-template','#bottom-3-stories');
+Handlebars.registerHelper('try',function(object) {
+    
+    return new Handlebars.SafeString('<button>lol</button>')
+})
+// renderHTML('top-1-news-template','#top-1-story .row');
