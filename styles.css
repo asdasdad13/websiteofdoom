@@ -42,7 +42,7 @@ a, a:hover {
 h2 {
     font-family: 'DM Serif Display', serif;
     border-bottom: 1px solid gray;
-    width:fit-content;
+    width: fit-content;
 }
 
 #top-1-story .card-body {
@@ -64,10 +64,6 @@ h3 {
 #top-stories-and-latest {
     border-bottom: 1px solid gray;
     padding-bottom: 1rem;
-}
-
-#top-stories-and-latest .row {
-    width: fit-content;
 }
 
 h4 {
@@ -148,6 +144,34 @@ h4 {
 #bottom-3-stories .card-story {
     padding-top: 1rem;
 }
+
+.social-icons .fa-brands, .fa-solid {
+	font-size: 1.3em;
+}
+
+.social-icons .fa-brands, .fa-solid {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFF;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.social-icons .fa-envelope {
+    color: #000;
+    border: 1px solid #000;
+}
+
+.social-icons .fa-twitter {background-color:#32CCFE;}
+.social-icons .fa-facebook-f {background-color:#3C599F;}  
+.social-icons .fa-instagram{background-color:#A1755C;}
+.social-icons .fa-envelope {background-color:#FFF;}
 
 @media screen and (min-width: 768px)
 {
