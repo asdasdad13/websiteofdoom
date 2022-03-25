@@ -18,6 +18,16 @@ body {
     border-radius: 0;
 }
 
+.card-body.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-text {
+    width: 80%;
+}
+
 .card-img-top:not(.featured-story .card-img-top) {
     width: 100%;
     height: 10vw;
@@ -28,7 +38,7 @@ h3, #latest-news-col .card-body, #latest-news-col .card-title, #breaking-news-ti
     margin: 0;
 }
 
-h2, p, .col, .col-md, .col-md-4, .card-body, .flex-row, ul  {
+h2, p, .col, .col-md-4, .card-body, .flex-row, ul  {
     padding: 0 !important;
 }
 
