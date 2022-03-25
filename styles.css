@@ -35,6 +35,10 @@ a, a:hover {
     text-decoration: none;
 }
 
+#top-stories-socmed h2 {
+    height: fit-content;
+}
+
 #top-4-stories {
     border-right: 1px solid gray;
 }
