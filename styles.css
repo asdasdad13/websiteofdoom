@@ -13,10 +13,6 @@ body {
 }
 
 .card {
-    border: 1px solid green;
-}
-
-.card {
     border: none;
     border-top: 1rem;
     border-radius: 0;
@@ -79,9 +75,13 @@ h4 {
     color: gray;
 }
 
-#latest-news-col-article-container:not(:last-of-type) {
+#latest-news-col .card-story {
+    /* border: 1px solid green; */
+    padding: 1.5rem 0;
+}
+
+#latest-news-col .article-container:not(:last-of-type) {
     border-bottom: 1px solid gray;
-    /* padding-bottom: 1rem; */
 }
 
 .card-title:hover {
@@ -147,9 +147,6 @@ h4 {
 
 #bottom-3-stories .card-story {
     border-top: 1px solid gray;
-}
-
-#bottom-3-stories .card-story {
     padding-top: 1rem;
 }
 
