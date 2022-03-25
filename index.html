@@ -65,12 +65,14 @@
             <time id="current_date"></time>
         </div>
         <div class="row my-3">
-            <div class="d-flex flex-row" id="breaking-news">
-                <div class='p-2' id="breaking-news-ticker">
-                    <p id="breaking-news-title">BREAKING:</p>
-                </div>
-                <div class='p-2' id="breaking-news-content">
-                    <ul id="breaking-news-list"></ul>
+            <div class="col">
+                <div class="d-flex flex-row" id="breaking-news">
+                    <div class='p-2' id="breaking-news-ticker">
+                        <p id="breaking-news-title">BREAKING:</p>
+                    </div>
+                    <div class='p-2' id="breaking-news-content">
+                        <ul id="breaking-news-list"></ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,19 +80,32 @@
         <div id="main-content">
             <section class="news-category">
                 <div class="row news-category-content" id="top-stories-and-latest">
-                    <div class="row">
-                        <h2>
+                    <div class="row d-flex justify-content-between" id="top-stories-socmed">
+                        <h2 class="w-auto">
                             TOP STORIES
                         </h2>
+                        <div class="w-auto">
+                            <p class="d-inline-block">
+                                FOLLOW US
+                            </p>
+                            <div class="d-inline-block">
+                                <ul class="list-group list-group-horizontal social-icons" aria-labelledby="socials">
+                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-facebook-f"></i></i></a></li>
+                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md" id="top-4-stories">
-                            <div class='row pt-3 me-3 g-0 position-relative' id="top-1-story">
+                            <div class='row pt-3 me-1' id="top-1-story">
                                 <article>
                                     <div class="card">
-                                        <script id="featured-news-template" type="template/handlebars">
+                                        <script id="top-1-news-template" type="template/handlebars">
                                             {{#each articles}}
-                                            {{#if featured}}
+                                            {{#if top_1}}
                                             <div class="col-md-4">
                                                 <div class="card-body">
                                                     <div class="card-title">
@@ -98,7 +113,7 @@
                                                             <a href='#' class='stretched-link'>{{headline}}</a>
                                                         </h3>
                                                     </div>
-                                                    <p class="card-text">{{featured_tagline}}</p>
+                                                    <p class="card-text">{{top_1_tagline}}</p>
                                                 </div>
                                             </div>
                                             <div class="col-md">
@@ -107,7 +122,7 @@
                                             {{/if}}
                                             {{/each}}
                                         </script>
-                                        <div class="row position-relative"></div>
+                                        <div class="row g-0"></div>
                                     </div>
                                 </article>
                             </div>
@@ -139,7 +154,7 @@
                             </h2>
                             <script type="template/handlebars" id="latest-news-template">
                                 {{#each articles}}
-                                {{#unless featured}}
+                                {{#unless top_1}}
                                 <div class='row-md' id='latest-news-col-article-container'>
                                     <article>
                                         <div class="card">
@@ -166,7 +181,7 @@
                 <div class="row float-end">
                     <a href='#' class="btn" role="button">
                         VIEW MORE LATEST STORIES
-                        <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i></i>
                     </a>
                 </div>
             </section>

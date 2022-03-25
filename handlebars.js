@@ -7,8 +7,8 @@ var data = {
             category: 'WORLD',
             related_geographical: ['Central Asia & Caucasus','Eastern & Central Europe','Middle East & North Africa','Armenia','Georgia','Russia','Turkey'],
             related_topics: ['Arts & Culture','Censorship','Economics & Business','Freedom of Speech','Human Rights','Media & Journalism','Migration & Immigration','Music','Politics','Protest','Refugees','War & Conflict','Russia invades Ukraine'],
-            featured: true,
-            featured_tagline: 'Turkey is one of a handful of countries welcoming Russians.',
+            top_1: true,
+            top_1_tagline: 'Turkey is one of a handful of countries welcoming Russians.',
             art: [
                 {
                     url: 'images/IMG_1652.png',
@@ -28,8 +28,8 @@ var data = {
             category: 'BUSINESS',
             related_geographical: ['Eastern & Central Europe','Middle East & North Africa','Russia','Turkey','Ukraine'],
             related_topics: ['Economics & Business','Food','Politics','War & Conflict'],
-            featured: false,
-            featured_tagline: '',
+            top_1: false,
+            top_1_tagline: '',
             art: [
                 {
                     url: 'images/audrius-sutkus-cJ7A2SwC9tU-unsplash.jpg',
@@ -45,8 +45,8 @@ var data = {
             category: 'TECH',
             related_geographical: ['Central Asia & Caucasus','Azerbaijan'],
             related_topics: ['Breaking News','Censorship','Freedom of Speech','Governance','Human Rights','Law','Politic','sProtest','Youth'],
-            featured: false,
-            featured_tagline: '',
+            top_1: false,
+            top_1_tagline: '',
             art: [
                 {
                     url: 'images/Screen-Shot-2022-03-10-at-10.42.12-AM-800x396.png',
@@ -62,8 +62,8 @@ var data = {
             category: 'WORLD',
             related_geographical: ['Central Asia & Caucasus','Turkmenistan','Ukraine'],
             related_topics: ['Ukraine Invasion', 'Humanitarian Response','International Relations','Migration & Immigration','Refugees','War & Conflict','Youth'],
-            featured: false,
-            featured_tagline: '',
+            top_1: false,
+            top_1_tagline: '',
             art: [
                 {
                     url: 'images/04b4ef01-482a-4d28-a566-c38c28b401ed-800x434.jpg',
@@ -79,8 +79,8 @@ var data = {
             category: 'POLITICS',
             related_geographical: ['East Asia','China','Hong Kong (China)'],
             related_topics: ['Governance','Health','Law','Politics','COVID-19'],
-            featured: false,
-            featured_tagline: '',
+            top_1: false,
+            top_1_tagline: '',
             art: [
                 {
                     url: 'images/birthday-poster-800x479.jpg',
@@ -96,8 +96,8 @@ var data = {
             category: 'WORLD',
             related_geographical: ['Central Asia & Caucasus','Turkmenistan','Ukraine'],
             related_topics: ['Ukraine Invasion', 'Humanitarian Response','International Relations','Migration & Immigration','Refugees','War & Conflict','Youth'],
-            featured: false,
-            featured_tagline: '',
+            top_1: false,
+            top_1_tagline: '',
             art: [
                 {
                     url: 'images/04b4ef01-482a-4d28-a566-c38c28b401ed-800x434.jpg',
@@ -113,8 +113,8 @@ var data = {
             category: 'POLITICS',
             related_geographical: ['East Asia','China','Hong Kong (China)'],
             related_topics: ['Governance','Health','Law','Politics','COVID-19'],
-            featured: false,
-            featured_tagline: '',
+            top_1: false,
+            top_1_tagline: '',
             art: [
                 {
                     url: 'images/birthday-poster-800x479.jpg',
@@ -138,11 +138,11 @@ Handlebars.registerHelper('each_upto',function(limit,options) {
     var ar = [];
     for (i=0;ar.length<limit;i++) {
         var a = data.articles[i];
-        if (!a.featured) ar.push(options.fn(a));
+        if (!a.top_1) ar.push(options.fn(a));
     }
     return ar.join('');
 });
 
-renderHTML('featured-news-template','#top-4-stories .row');
+renderHTML('top-1-news-template','#top-1-story .row');
 renderHTML('latest-news-template','#latest-news-col-articles');
 renderHTML('bottom-3-stories-template','#bottom-3-stories');
