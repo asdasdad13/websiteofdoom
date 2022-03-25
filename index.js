@@ -90,7 +90,7 @@ var data = {
         {
             headline: "Russians against war are fleeing state crackdowns",
             author: 'Arzu Geybullayeva',
-            tagline: 'Turkey is one of a handful of countries welcoming Russians',
+            tagline: 'Turkey is one of a handful of countries welcoming Russians.',
             category: 'WORLD',
             related_geographical: ['Central Asia & Caucasus','Eastern & Central Europe','Middle East & North Africa','Armenia','Georgia','Russia','Turkey'],
             related_topics: ['Arts & Culture','Censorship','Economics & Business','Freedom of Speech','Human Rights','Media & Journalism','Migration & Immigration','Music','Politics','Protest','Refugees','War & Conflict','Russia invades Ukraine'],
@@ -112,7 +112,7 @@ var data = {
         {
             headline: "Has Turkey dodged its sunflower oil crisis?",
             author: ['Arzu Geybullayeva'],
-            tagline: 'Citizens rushed to grocery stores fearing price hikes and shortages',
+            tagline: 'Citizens rushed to grocery stores fearing price hikes and shortages.',
             category: 'BUSINESS',
             related_geographical: ['Eastern & Central Europe','Middle East & North Africa','Russia','Turkey','Ukraine'],
             related_topics: ['Economics & Business','Food','Politics','War & Conflict'],
@@ -148,7 +148,7 @@ var data = {
         {
             headline: "Turkmen students: Escaping from war-torn Ukraine",
             author: ['Oguljamal Yazliyeva','Shirin Rahman'],
-            tagline: 'With little government support, Turkmen students turned to social media',
+            tagline: 'With little government support, Turkmen students turned to social media.',
             category: 'WORLD',
             related_geographical: ['Central Asia & Caucasus','Turkmenistan','Ukraine'],
             related_topics: ['Ukraine Invasion', 'Humanitarian Response','International Relations','Migration & Immigration','Refugees','War & Conflict','Youth'],
@@ -166,7 +166,7 @@ var data = {
         {
             headline: "How one birthday party sparked an outpouring of anger and resentment in Hong Kong",
             author: ['Oiwan Lam'],
-            tagline: 'A dozen officials attended the party, in violation of pandemic-control rules',
+            tagline: 'A dozen officials attended the party, in violation of pandemic-control rules.',
             category: 'POLITICS',
             related_geographical: ['East Asia','China','Hong Kong (China)'],
             related_topics: ['Governance','Health','Law','Politics','COVID-19'],
