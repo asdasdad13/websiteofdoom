@@ -104,18 +104,3 @@ function renderHTML(templateId, selector) {
 
     document.querySelector(selector).innerHTML += html;
 }
-
-Handlebars.registerHelper('each_upto',function(limit,options) {
-    var ar = [];
-    for (i=0;ar.length<limit;i++) {
-        var a = data.articles[i];
-        if (!a.featured_top_1) ar.push(options.fn(a));
-    }
-    return ar.join('');
-});
-
-Handlebars.registerHelper('try',function(object) {
-    
-    return new Handlebars.SafeString('<button>lol</button>')
-})
-// renderHTML('top-1-news-template','#top-1-story .row');

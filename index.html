@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -71,7 +71,7 @@
                         <p id="breaking-news-title">BREAKING:</p>
                     </div>
                     <div class='p-2' id="breaking-news-content">
-                        <ul id="breaking-news-list"></ul>
+                        <ul class='m-auto' id="breaking-news-list"></ul>
                     </div>
                 </div>
             </div>
@@ -79,37 +79,37 @@
 
         <div id="main-content">
             <section class="news-category">
-                <div class="row news-category-content" id="top-stories-and-latest">
-                    <div class="row d-flex justify-content-between align-items-end" id="top-stories-socmed">
-                        <div class="col-md-auto g-0">
-                            <h2 class="w-auto">
-                                TOP STORIES
-                            </h2>
-                        </div>
-                        <div class="col-md-3 ps-3">
-                            <div class="w-auto">
-                                <p class="d-inline-block">
-                                    FOLLOW US
-                                </p>
-                                <div class="d-inline-block">
-                                    <ul class="list-group list-group-horizontal social-icons" aria-labelledby="socials">
-                                        <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                        <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-facebook-f"></i></i></a></li>
-                                        <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                        <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                                    </ul>
-                                </div>
+                <div class="row d-flex flex-row-reverse justify-content-between align-items-end" id="top-stories-socmed">
+                    <div class="col-md-3 ps-3">
+                        <div class="w-auto">
+                            <p class="d-inline-block">
+                                FOLLOW US
+                            </p>
+                            <div class="d-inline-block">
+                                <ul class="list-group list-group-horizontal social-icons" aria-labelledby="socials">
+                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-facebook-f"></i></i></a></li>
+                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-auto g-0">
+                        <h2 class="w-auto">
+                            TOP STORIES
+                        </h2>
+                    </div>
+                </div>
+                <div class="row news-category-content border-bottom border-top py-3" id="top-stories-and-latest">
                     <div class="row">
-                        <div class="col-md d-flex flex-column" id="top-4-stories">
-                            <div class='row pt-3 me-1' id="top-1-story">
+                        <div class="col-md d-flex flex-column border-end" id="top-4-stories">
+                            <div class='row pt-3 me-1 featured-story' id="top-1-story">
                                 <article>
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-4">
-                                                <div class="card-body">
+                                                <div class="card-body m-0">
                                                     <div class="card-title">
                                                         <h3>
                                                             <a href='#' class='stretched-link'>Russians against war are fleeing state crackdowns</a>
@@ -128,9 +128,9 @@
                             <div class='row g-0 mt-3 pe-3 flex-grow-1' id="bottom-3-stories">
                                 <div class="col-md">
                                     <article>
-                                        <div class='card-story'>
+                                        <div class='card-story border-top me-3 pt-3'>
                                             <div class="card">
-                                                <img height=170px class='card-img-top' src='images/audrius-sutkus-cJ7A2SwC9tU-unsplash.jpg' alt='article art'/>
+                                                <img class='card-img-top' src='images/audrius-sutkus-cJ7A2SwC9tU-unsplash.jpg' alt='article art'/>
                                                 <div class='card-body'>
                                                     <div class='card-title'>
                                                         <h3>
@@ -144,9 +144,9 @@
                                 </div>
                                 <div class="col-md">
                                     <article>
-                                        <div class='card-story'>
+                                        <div class='card-story border-top mx-3 pt-3'>
                                             <div class="card">
-                                                <img height=170px class='card-img-top' src='images/Screen-Shot-2022-03-10-at-10.42.12-AM-800x396.png' alt='article art'/>
+                                                <img class='card-img-top' src='images/Screen-Shot-2022-03-10-at-10.42.12-AM-800x396.png' alt='article art'/>
                                                 <div class='card-body'>
                                                     <div class='card-title'>
                                                         <h3>
@@ -160,9 +160,9 @@
                                 </div>
                                 <div class="col-md">
                                     <article>
-                                        <div class='card-story'>
+                                        <div class='card-story border-top ms-3 pt-3'>
                                             <div class="card">
-                                                <img height=170px class='card-img-top' src='images/birthday-poster-800x479.jpg' alt='article art'/>
+                                                <img class='card-img-top' src='images/birthday-poster-800x479.jpg' alt='article art'/>
                                                 <div class='card-body'>
                                                     <div class='card-title'>
                                                         <h3>
@@ -302,30 +302,100 @@
                     </a>
                 </div>
             </section>
+
             <section class="news-category">
-                <div class="row" id="some-news-category-block">
-                    <script id='some-news-template' type="template/handlebars">
-                        <div class="col bg-success">
-                            <div class="row">
-                                {{#try}}
-                                {{/try}}
-                            </div>
-                            <div class="row">
-                                a2
-                            </div>
+                <div class="row py-3 border-bottom border-top" id="some-news-category-block">
+                    <div class="col me-3">
+                        <div class="row text-center sub-category-header">
+                            <h3>COVID-19</h3>
                         </div>
-                        <div class="col-md-6 bg-primary">
-                            b
+                        <div class="row">
+                            <article>
+                                <div class='card-story pt-3'>
+                                    <div class="card">
+                                        <img class='card-img-top' src='images/birthday-poster-800x479.jpg' alt='article art'/>
+                                        <div class='card-body'>
+                                            <div class='card-title'>
+                                                <h3>
+                                                    <a href='#' class='stretched-link'>How one birthday party sparked an outpouring of anger and resentment in Hong Kong</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
-                        <div class="col bg-danger">
-                            <div class="row">
-                                c1
-                            </div>
-                            <div class="row">
-                                c2
-                            </div>
+                        <div class="row">
+                            <article>
+                                <div class='card-story pt-3'>
+                                    <img class='card-img-top' src='images/birthday-poster-800x479.jpg' alt='article art'/>
+                                    <div class='card-body'>
+                                        <div class='card-title'>
+                                            <h3>
+                                                <a href='#' class='stretched-link'>How one birthday party sparked an outpouring of anger and resentment in Hong Kong</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
-                    </script>
+                    </div>
+                    <div class="col-md-6 px-3 mt-0 featured-story border-start border-end">
+                        <article>
+                            <div class='card-story'>
+                                <div class="card">
+                                    <img height=450px class='card-img-top' src='images/birthday-poster-800x479.jpg' alt='article art'/>
+                                    <div class='card-body text-center'>
+                                        <div class='card-title'>
+                                            <h3>
+                                                <a href='#' class='stretched-link'>How one birthday party sparked an outpouring of anger and resentment in Hong Kong</a>
+                                            </h3>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>A dozen officials attended the party, in violation of pandemic-control rules.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col ms-3">
+                        <div class="row text-center">
+                            <h3>OPINIONS</h3>
+                        </div>
+                        <div class="row">
+                            <article>
+                                <div class='card-story pt-3'>
+                                    <div class="card">
+                                        <img class='card-img-top' src='images/birthday-poster-800x479.jpg' alt='article art'/>
+                                        <div class='card-body'>
+                                            <div class='card-title'>
+                                                <h3>
+                                                    <a href='#' class='stretched-link'>How one birthday party sparked an outpouring of anger and resentment in Hong Kong</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article>
+                                <div class='card-story pt-3'>
+                                    <div class="card">
+                                        <img class='card-img-top' src='images/birthday-poster-800x479.jpg' alt='article art'/>
+                                        <div class='card-body'>
+                                            <div class='card-title'>
+                                                <h3>
+                                                    <a href='#' class='stretched-link'>How one birthday party sparked an outpouring of anger and resentment in Hong Kong</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
