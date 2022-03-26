@@ -9,6 +9,10 @@ body {
     width: 100%;
 }
 
+footer {
+    color: #FFF;
+}
+
 .navbar {
     background-color: #FFF;
 }
@@ -209,6 +213,12 @@ h2 {
 .social-icons .fa-instagram{background-color:#A1755C;}
 .social-icons .fa-envelope {background-color:#FFF;}
 
+.social-icons .list-group-item {
+    border: none;
+    background-color: transparent;
+    padding: 0.2rem;
+}
+
 #btn-back-to-top {
     display: none;
     position: fixed;
@@ -217,8 +227,13 @@ h2 {
     z-index: 99;
     border-radius: 50%;
 }
+
 #btn-back-to-top i {
     font-size: 2rem;
+}
+
+.input-group-item {
+    /* width: 100%; */
 }
 
 @media screen and (min-width: 768px)
