@@ -40,10 +40,8 @@ body {
 
 .card {
     border: none;
-    border-top: 1rem;
-    border-radius: 0;
-    flex-grow: 1;
 }
+
 .card-body.text-center {
     display: flex;
     flex-direction: column;
@@ -103,12 +101,6 @@ h2 {
 
 #latest-news-col p {
     color: #a8a8a8;
-}
-
-#latest-news-col .article-container, #some-news-category-block .article-container {
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #latest-news-col .article-container:not(:last-of-type) {
