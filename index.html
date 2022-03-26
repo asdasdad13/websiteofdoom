@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class='container-md'>
-        <header class="border-bottom row">
+        <header class="row">
             <div class="row g-0 d-flex justify-content-end mt-4" id="search-login-row">
                 <div class="col-md-3 col-lg-2 mb-4 me-4" id="search-login-container">
                     <form class="input-group rounded form-inline">
@@ -30,36 +30,36 @@
                     </button>
                 </div>
             </div>
-            <nav class='navbar navbar-expand-md navbar-light row g-0'>
-                <ul class='navbar-nav text-center' aria-hidden="true">
-                    <li class="nav-item col-md"><a class="nav-link" href='#'>Asia</a></li>
-                    <li class="nav-item col-md"><a class="nav-link" href='#'>Business</a></li>
-                    <li class="nav-item col-md"><a class="nav-link" href='#'>Politics</a></li>
-                    <li class="nav-item col-md"><a class="nav-link" href='#'>Tech</a></li>
-                    <li class="nav-item col-md-2 d-flex align-items-end">
-                        <div class='navbar-header col-md-2 d-flex align-items-end'>
-                            <a class='text-hide navbar-brand nav-link active position-absolute col-md-2 p-0' title='Home' href="#">
-                                <h1 style="display:none">The News Channel</h1>
-                                <img class='w-100' src="images/news.png"/>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item col-md"><a class="nav-link" href='#'>Life</a></li>
-                    <li class="nav-item col-md"><a class="nav-link" href='#'>Sports</a></li>
-                    <li class="nav-item col-md"><a class="nav-link" href='#'>Entertainment</a></li>
-                    <li class="nav-item col-md dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
-                        <ul class='dropdown-menu' labelledby='navbarDropdown'>
-                            <li><a class="dropdown-item" href='#'>Podcasts</a></li>
-                            <li><a class="dropdown-item" href='#'>Opinions</a></li>
-                            <li><a class="dropdown-item" href='#'>Home Delivery</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
         </header>
+        <nav class='navbar sticky-top navbar-expand-md navbar-light row border-bottom'>
+            <ul class='navbar-nav text-center' aria-hidden="true">
+                <li class="nav-item col-md"><a class="nav-link" href='#'>Asia</a></li>
+                <li class="nav-item col-md"><a class="nav-link" href='#'>Business</a></li>
+                <li class="nav-item col-md"><a class="nav-link" href='#'>Politics</a></li>
+                <li class="nav-item col-md"><a class="nav-link" href='#'>Tech</a></li>
+                <li class="nav-item col-md-2 d-flex align-items-end">
+                    <div class='navbar-header col-md-2 d-flex align-items-end'>
+                        <a class='text-hide navbar-brand nav-link active position-absolute col-md-2 p-0' title='Home' href="#">
+                            <h1 style="display:none">The News Channel</h1>
+                            <img class='w-100' src="images/news.png"/>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item col-md"><a class="nav-link" href='#'>Life</a></li>
+                <li class="nav-item col-md"><a class="nav-link" href='#'>Sports</a></li>
+                <li class="nav-item col-md"><a class="nav-link" href='#'>Entertainment</a></li>
+                <li class="nav-item col-md dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <ul class='dropdown-menu' labelledby='navbarDropdown'>
+                        <li><a class="dropdown-item" href='#'>Podcasts</a></li>
+                        <li><a class="dropdown-item" href='#'>Opinions</a></li>
+                        <li><a class="dropdown-item" href='#'>Home Delivery</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
         <div class="row text-center border-bottom justify-content-center" id="time-banner">
             <time id="current_date"></time>
@@ -122,7 +122,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class='row g-0 mt-3 pe-3 flex-grow-1' id="bottom-3-stories">
+                        <div class='row g-0 mt-3 pe-3 flex-grow-1 three-stories-in-a-row'>
                             <div class="col-md">
                                 <div class="article-container">
                                     <article>
@@ -386,121 +386,176 @@
             </section>
 
             <section class="news-category">
-                <div class="row" id="some-news-category-block-2">
-                    <div class="col-md g-0 pe-3">
-                        <h2>UKRAINE CRISIS</h2>
-                        <div class="row g-0 border-top border-bottom pb-3">
-                            <div class='featured-story col-md py-3'>
-                                <div class="article-container">
-                                    <article>
-                                        <div class='card-story'>
-                                            <div class="card">
-                                                <div class='card-body text-center'>
-                                                    <div class='card-title'>
-                                                        <h3>
-                                                            <a href='#' class='stretched-link'>Turkmen students: Escaping from war-torn Ukraine</a>
-                                                        </h3>
+                <div class="row">
+                    <div class="row" id="some-news-category-block-2">
+                        <div class="col-md g-0 pe-3">
+                            <h2>UKRAINE CRISIS</h2>
+                            <div class="row g-0 border-top border-bottom pb-3">
+                                <div class='featured-story col-md py-3'>
+                                    <div class="article-container">
+                                        <article>
+                                            <div class='card-story'>
+                                                <div class="card">
+                                                    <div class='card-body text-center'>
+                                                        <div class='card-title'>
+                                                            <h3>
+                                                                <a href='#' class='stretched-link'>Turkmen students: Escaping from war-torn Ukraine</a>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="card-text">
+                                                            <p>With little government support, Turkmen students turned to social media.</p>
+                                                        </div>
                                                     </div>
-                                                    <div class="card-text">
-                                                        <p>With little government support, Turkmen students turned to social media.</p>
+                                                    <img class='card-img-bottom' src='images/04b4ef01-482a-4d28-a566-c38c28b401ed-800x434.jpg' alt='article art'/>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class='col-md-4 ms-3 border-start border-end mt-3'>
+                                    <div class="row g-0 px-3">
+                                        <div class="article-container">
+                                            <article>
+                                                <div class='card-story'>
+                                                    <div class="card">
+                                                        <img class='card-img-top' src='images/Screen-Shot-2022-03-10-at-10.42.12-AM-800x396.png' alt='article art'/>
+                                                        <div class='card-body'>
+                                                            <div class='card-title'>
+                                                                <h3>
+                                                                    <a href='#' class='stretched-link'>Can Ukraine's internet sustain longer-term attacks and destruction from Russia?</a>
+                                                                </h3>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <img class='card-img-bottom' src='images/04b4ef01-482a-4d28-a566-c38c28b401ed-800x434.jpg' alt='article art'/>
+                                            </article>
+                                        </div>
+                                        <div class="article-container">
+                                            <article>
+                                                <div class='card-story border-top'>
+                                                    <div class="card pt-3">
+                                                        <img class='card-img-top' src='images/audrius-sutkus-cJ7A2SwC9tU-unsplash.jpg' alt='article art'/>
+                                                        <div class='card-body'>
+                                                            <div class='card-title'>
+                                                                <h3>
+                                                                    <a href='#' class='stretched-link'>Has Turkey dodged its sunflower oil crisis?</a>
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-md-3' id="most-read-col">
+                            <div class="col-md p-3 border border-danger">
+                                <h2 class="text-center m-auto pt-2">MOST READ</h2>
+                                <div class="row g-0 article-container">
+                                    <article>
+                                        <div class='card-story'>
+                                            <div class="card pt-3">
+                                                <img class='card-img-top' src='images/birthday-poster-800x479.jpg' alt='article art'/>
+                                                <div class='card-body'>
+                                                    <div class='card-title'>
+                                                        <h3>
+                                                            <a href='#' class='stretched-link'>How one birthday party sparked an outpouring of anger and resentment in Hong Kong</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="row g-0 article-container border-top">
+                                    <article>
+                                        <div class='card-story'>
+                                            <div class="card pt-3">
+                                                <img class='card-img-top' src='images/IMG_1652.png' alt='article art'/>
+                                                <div class='card-body'>
+                                                    <div class='card-title'>
+                                                        <h3>
+                                                            <a href='#' class='stretched-link'>Russians against war are fleeing state crackdowns</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="row g-0 article-container border-top">
+                                    <article>
+                                        <div class='card-story'>
+                                            <div class="card pt-3">
+                                                <img class='card-img-top' src='images/Screen-Shot-2022-03-10-at-10.42.12-AM-800x396.png' alt='article art'/>
+                                                <div class='card-body'>
+                                                    <div class='card-title'>
+                                                        <h3>
+                                                            <a href='#' class='stretched-link'>Can Ukraine's internet sustain longer-term attacks and destruction from Russia?</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </article>
                                 </div>
                             </div>
-                            <div class='col-md-4 ms-3 border-start border-end mt-3'>
-                                <div class="row g-0 px-3">
-                                    <div class="article-container">
-                                        <article>
-                                            <div class='card-story'>
-                                                <div class="card">
-                                                    <img class='card-img-top' src='images/Screen-Shot-2022-03-10-at-10.42.12-AM-800x396.png' alt='article art'/>
-                                                    <div class='card-body'>
-                                                        <div class='card-title'>
-                                                            <h3>
-                                                                <a href='#' class='stretched-link'>Can Ukraine's internet sustain longer-term attacks and destruction from Russia?</a>
-                                                            </h3>
-                                                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class='row g-0 mt-3 pe-3 flex-grow-1 three-stories-in-a-row'>
+                            <div class="col-md">
+                                <div class="article-container">
+                                    <article>
+                                        <div class='card-story border-top me-3 pt-3'>
+                                            <div class="card">
+                                                <img class='card-img-top' src='images/audrius-sutkus-cJ7A2SwC9tU-unsplash.jpg' alt='article art'/>
+                                                <div class='card-body'>
+                                                    <div class='card-title'>
+                                                        <h3><a href='#' class='stretched-link'>Has Turkey dodged its sunflower oil crisis?</a></h3>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </article>
-                                    </div>
-                                    <div class="article-container">
-                                        <article>
-                                            <div class='card-story border-top'>
-                                                <div class="card pt-3">
-                                                    <img class='card-img-top' src='images/audrius-sutkus-cJ7A2SwC9tU-unsplash.jpg' alt='article art'/>
-                                                    <div class='card-body'>
-                                                        <div class='card-title'>
-                                                            <h3>
-                                                                <a href='#' class='stretched-link'>Has Turkey dodged its sunflower oil crisis?</a>
-                                                            </h3>
-                                                        </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="article-container">
+                                    <article>
+                                        <div class='card-story border-top mx-3 pt-3'>
+                                            <div class="card">
+                                                <img class='card-img-top' src='images/Screen-Shot-2022-03-10-at-10.42.12-AM-300x200.jpg' alt='article art'/>
+                                                <div class='card-body'>
+                                                    <div class='card-title'>
+                                                        <h3><a href='#' class='stretched-link'>Can Ukraine's internet sustain longer-term attacks and destruction from Russia?</a></h3>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </article>
-                                    </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="article-container">
+                                    <article>
+                                        <div class='card-story border-top ms-3 pt-3'>
+                                            <div class="card">
+                                                <img class='card-img-top' src='images/birthday-poster-300x200.jpg' alt='article art'/>
+                                                <div class='card-body'>
+                                                    <div class='card-title'>
+                                                        <h3><a href='#' class='stretched-link'>How one birthday party sparked an outpouring of anger and resentment in Hong Kong</a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='col-md-3' id="most-read-col">
-                        <div class="col-md p-3 border border-danger">
-                            <h2 class="text-center m-auto pt-2">MOST READ</h2>
-                            <div class="row g-0 article-container">
-                                <article>
-                                    <div class='card-story'>
-                                        <div class="card pt-3">
-                                            <img class='card-img-top' src='images/birthday-poster-800x479.jpg' alt='article art'/>
-                                            <div class='card-body'>
-                                                <div class='card-title'>
-                                                    <h3>
-                                                        <a href='#' class='stretched-link'>How one birthday party sparked an outpouring of anger and resentment in Hong Kong</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="row g-0 article-container border-top">
-                                <article>
-                                    <div class='card-story'>
-                                        <div class="card pt-3">
-                                            <img class='card-img-top' src='images/IMG_1652.png' alt='article art'/>
-                                            <div class='card-body'>
-                                                <div class='card-title'>
-                                                    <h3>
-                                                        <a href='#' class='stretched-link'>Russians against war are fleeing state crackdowns</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="row g-0 article-container border-top">
-                                <article>
-                                    <div class='card-story'>
-                                        <div class="card pt-3">
-                                            <img class='card-img-top' src='images/Screen-Shot-2022-03-10-at-10.42.12-AM-800x396.png' alt='article art'/>
-                                            <div class='card-body'>
-                                                <div class='card-title'>
-                                                    <h3>
-                                                        <a href='#' class='stretched-link'>Can Ukraine's internet sustain longer-term attacks and destruction from Russia?</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -578,6 +633,9 @@
                     </div>
                 </div>
             </section>
+            <button type="button" class="btn btn-primary" id="btn-back-to-top">
+                <i class="fas fa-arrow-up p-0"></i>
+            </button>
         </div>
     </div>
 	<script type="text/javascript" src='index.js'></script>
