@@ -80,21 +80,16 @@
         <div id="main-content">
             <section class="news-category">
                 <div class="row d-flex flex-row-reverse justify-content-between align-items-end" id="top-stories-socmed">
-                    <div class="col-md-3">
-                        <div class="w-auto">
-                            <p class="d-inline-block">
-                                FOLLOW US
-                            </p>
-                            <div class="d-inline-block socials">
-                                <ul class="list-group list-group-horizontal social-icons" aria-labelledby="socials">
-                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-facebook-f"></i></i></a></li>
-                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li class="list-group-item p-1 border-0"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    <div class="col-md-3 d-flex justify-content-end">
+                            <div class="socials">
+                                <p class="d-inline-block pe-2">FOLLOW US</p>
+                                <ul class="list-inline d-inline-block social-icons" aria-labelledby="socials">
+                                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f"></i></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
                     <div class="col-md-auto g-0">
                         <h2 class="w-auto">
                             TOP STORIES
@@ -469,7 +464,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class='row g-0 mt-3 pe-3 flex-grow-1 three-stories-in-a-row'>
+                            <div class='row g-0 mt-3 pb-3 three-stories-in-a-row border-bottom'>
                                 <div class="col-md">
                                     <div class="article-container">
                                         <article>
@@ -657,43 +652,81 @@
         </div>
     </div>
     <footer class="bg-dark">
-        <div class="container-md pb-5 d-flex justify-content-center">
-            <div class="col-md me-5 bg-primary">
-
-            </div>
-            <div class="col-md me-5">
-
-            </div>
-            <div class="col-md">
-                <div class="socials">
-                    <ul class="list-group list-group-horizontal social-icons d-flex justify-content-end" aria-labelledby="socials">
-                        <li class="list-group-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li class="list-group-item"><a href="#"><i class="fa-brands fa-facebook-f"></i></i></a></li>
-                        <li class="list-group-item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
+        <div class="container-md">
+            <div class="row footer-main py-5 d-flex justify-content-center">
+                <div class="col-md me-5">
+                    <section id="news-categories">
+                        <div class="row">
+                            <h2 class="w-auto">News Categories</h2>
+                        </div>
+                        <div class="row">
+                            <ul class="m-0">
+                                <li><a href="#">Asia</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Politics</a></li>
+                                <li><a href="#">Tech</a></li>
+                                <li><a href="#">Life</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Entertainment</a></li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
-                <div class="mt-2" id="newsletter-sub">
-                    <h2>Get our newsletter in your inbox today.</h2>
-                    <div class="input-group">
-                        <button class="btn btn-outline-secondary dropdown-toggle input-group-item" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose a type of newsletter</button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item">Morning Brief</a></li>
-                            <li><a class="dropdown-item">Evening Brief</a></li>
-                            <li><a class="dropdown-item">The News Channel Opinions</a></li>
-                            <li><a class="dropdown-item">All of the above</a></li>
-                        </ul>
-                    </div>
-                    <form>
-                            <div class="form-item mb-3">
-                                <input type="email" class="form-control" id="subscribe-email" placeholder="Enter email address">
+                <div class="col-md me-5">
+                    <section id="about-us">
+                        <nav>
+                            <div class="row">
+                                <h2 class="mb-3 w-auto">About TNC</h2>
                             </div>
-                            <div class="form-item">
-                                <input class='px-5 rounded bg-dark text-light' type="submit" value="Subscribe Now">
+                            <div class="row">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Advertise with us</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </section>
+                </div>
+                <div class="col-md">
+                    <section id="socials-and-sub">
+                        <div class="socials">
+                            <p class="d-inline-block me-2">GET UPDATES ON YOUR TIMELINE</p>
+                            <div class="d-inline-block">
+                                <ul class="list-inline social-icons" aria-labelledby="socials">
+                                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f"></i></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
                             </div>
                         </div>
-                    </form>
+                        <form>
+                            <div class="mt-2 d-flex flex-column align-items-center" id="newsletter-sub">
+                                <h2 class="mb-3">Get our newsletter in your inbox today.</h2>
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text" for="inputGroupSelect01">Newsletter type</label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option value="morning" selected>Morning Brief</option>
+                                        <option value="evening">Evening Brief</option>
+                                        <option value="opinions">The News Channel Opinions</option>
+                                        <option value="all">All of the above</option>
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Your email address" aria-label="Subscription email address">
+                                </div>
+                                <button type="submit" class="btn btn-primary" id="btn-sub-now">Subscribe now</button>
+                            </div>
+                        </form>
+                    </section>
                 </div>
             </div>
+        </div>
+        <div class="row footer-copyright d-flex justify-content-center">
+            Copyright © 2021 TNC Ltd. All rights reserved.
         </div>
     </footer>
 	<script type="text/javascript" src='index.js'></script>
