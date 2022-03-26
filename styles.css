@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     width: 100%;
 }
 
@@ -84,14 +84,13 @@ a, a:hover {
 h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-style: italic;
-    font-weight:700;
+    font-weight: bold;
     border-bottom: 1px solid #abbac9;
-    width: fit-content;
 }
 
 .featured-story h3 {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .featured-story p {
@@ -104,13 +103,6 @@ h2 {
 
 #latest-news-col p {
     color: #a8a8a8;
-    margin-bottom: 0.2rem;
-}
-
-#latest-news-col .article-container, #some-news-category-block .article-container {
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #latest-news-col .article-container:not(:last-of-type) {

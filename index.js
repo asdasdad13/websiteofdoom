@@ -106,6 +106,32 @@ function getDate(date) {
     return [day,m,d,y];
 }
 
+function updatedAgo(publishedTime) {
+    var seconds = Math.floor((new Date() - publishedTime) / 1000);
+    var interval = Math.floor(seconds / 31536000);
+
+    if (interval > 1) {
+        return interval + " years";
+    }
+    interval = Math.floor(seconds / 2592000);
+    if (interval > 1) {
+        return interval + " months";
+    }
+    interval = Math.floor(seconds / 86400);
+    if (interval > 1) {
+        return interval + " days";
+    }
+    interval = Math.floor(seconds / 3600);
+    if (interval > 1) {
+        return interval + " hours";
+    }
+    interval = Math.floor(seconds / 60);
+    if (interval >= 1) {
+        return interval + " minutes";
+    }
+    return Math.floor(seconds) + " seconds";
+}
+
 var data = {
     articles: [ //assume records in this makeshift database are already sorted
         {
@@ -213,5 +239,15 @@ function renderHTML(templateId, selector) {
     document.querySelector(selector).innerHTML += html;
 }
 
+function fillUpdatedAgos() {
+    document.getElementsByClassName('updatedAt')[0].innerHTML = updatedAgo(new Date('2022-03-15T16:15:00Z'));
+    document.getElementsByClassName('updatedAt')[1].innerHTML = updatedAgo(new Date('2022-03-15T16:15:00Z'));
+    document.getElementsByClassName('updatedAt')[2].innerHTML = updatedAgo(new Date('2022-03-10T09:51:00Z'));
+    document.getElementsByClassName('updatedAt')[3].innerHTML = updatedAgo(new Date('2022-03-10T09:51:00Z'));
+    document.getElementsByClassName('updatedAt')[4].innerHTML = updatedAgo(new Date('2022-03-10T00:59:00Z'));
+    document.getElementsByClassName('updatedAt')[5].innerHTML = updatedAgo(new Date('2022-03-10T00:59:00Z'));
+}
+
 loadBreakingNews();
 loadDate();
+fillUpdatedAgos();
