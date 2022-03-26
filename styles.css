@@ -105,6 +105,12 @@ h2 {
     color: #a8a8a8;
 }
 
+#latest-news-col .article-container, #some-news-category-block .article-container {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #latest-news-col .article-container:not(:last-of-type) {
     border-bottom: 1px solid #abbac9;
 }
@@ -136,7 +142,7 @@ h2 {
     color: #FFFFFF;
 }
 
-.three-stories-in-a-row article, .three-stories-in-a-row .card-story, .three-stories-in-a-row .card {
+.three-stories-in-a-row .article-container, .three-stories-in-a-row article, .three-stories-in-a-row .card-story, .three-stories-in-a-row .card {
     height: 100% !important;
 }
 
