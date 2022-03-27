@@ -13,6 +13,13 @@ body[class=dark-mode] {
     background: #000 !important;
 }
 
+h1 {
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px solid #a9bacc;
+    width: fit-content;
+}
+
 .border {
     border: 1px solid #a9bacc !important;
 }
