@@ -280,5 +280,4 @@ function insertDarkModeButton() {
 
 loadBreakingNews();
 loadDate();
-fillUpdatedAgos();
 insertDarkModeButton();
