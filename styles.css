@@ -123,17 +123,58 @@ h2 {
     margin-top: 1rem;
 }
 
-#breaking-news-content {
+#breaking-news {
+    overflow: hidden;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+
+#breaking-news span {
+    background-color: #A30F15;
+    color: #FFF;
+    float: left;
+    height: 2.5rem;
+}
+
+#breaking-news {
     background-color: #FFE6DA;
 }
 
-#breaking-news-list
-{
+#breaking-news ul {
+    padding-left: 1rem;
     color: #A30F15;
+    float: left;
+    animation: ticker 10s cubic-bezier(1,0,.5,0) infinite;
 }
 
-#breaking-news-ticker
-{
+#breaking-news li {
+    line-height: 2.5rem;
+}
+
+#breaking-news ul:hover {
+    animation-play-state: paused;
+}
+
+@keyframes ticker {
+    0% {
+        margin-top: 0;
+    }
+
+    33% {
+        margin-top: -2.5rem;
+    }
+
+    66% {
+        margin-top: -5rem;
+    }
+
+    99% {
+        margin-top: -7.5rem;
+    }
+}
+
+
+#breaking-news-ticker {
     background-color: #A30F15;
     color: #FFFFFF;
 }
