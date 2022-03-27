@@ -60,7 +60,7 @@ h1:not(.article-story-container h1) {
     height: 350px;
 }
 
-h2, p, .col, .col-md-4, .card-body, .flex-row, ul  {
+h2, p, .col, .card-body, .flex-row, ul  {
     padding: 0 !important;
 }
 
@@ -106,19 +106,6 @@ h2 {
 
 .tagged-articles h3 {
     font-weight: bold;
-}
-
-.featured-story h3 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.featured-story p {
-    font-size: 1.2rem;
-}
-
-#latest-news-col h3, #most-read-col h3 {
-    font-size: 1.2rem;
 }
 
 #latest-news-col .article-container:not(:last-of-type) {
@@ -221,7 +208,7 @@ h2 {
     border-right: 1px solid #abbac9;
 }
 
-#some-news-category-block .sub-category-header h3::before {
+#some-news-category-block .sub-category-header::before {
     content: '';
     display: inline-block;
     position: absolute;
@@ -296,8 +283,17 @@ section.tagged-articles img {
     height: 13rem;
 }
 
-@media (min-width: 920px) {
-    .navbar-brand {
-        max-height: 20px;
+@media (min-width: 992px) {
+
+    .featured-story h3 {
+        font-size: 2.5rem;
+    }
+    
+    .featured-story p {
+        font-size: 1.2rem;
+    }
+
+    #latest-news-col h3, #most-read-col h3 {
+        font-size: 1rem;
     }
 }

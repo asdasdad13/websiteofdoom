@@ -26,7 +26,7 @@ function loadBreakingNews() {
         var new_li = document.createElement("li");
         var new_a = document.createElement('a');
         new_a.innerHTML = headlines[i];
-        if (headlines[i] == 'Russians against war are fleeing state crackdowns') new_a.setAttribute('href', '/articles/russians-against-war-are-fleeing-state-crackdowns.html');
+        if (headlines[i] == 'Russians against war are fleeing state crackdowns') new_a.setAttribute('href', '/world/russians-against-war-are-fleeing-state-crackdowns.html');
         else new_a.setAttribute('href', '#');
         new_li.appendChild(new_a);
         breakingNewsList.appendChild(new_li);
