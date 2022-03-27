@@ -254,6 +254,11 @@ var mapClrs = {
     light: 'dark',
 }
 
+var mapIcons = {
+    'fa-sun': 'fa-moon',
+    'fa-moon': 'fa-sun'
+}
+
 function darkMode() {
     var element = document.getElementById('page');
     element.outerHTML = element.outerHTML.replace(/dark|light/gi, function(matched) {
@@ -261,8 +266,19 @@ function darkMode() {
         return mapClrs[matched];
     });
     document.body.classList.toggle("dark-mode");
+    var icon = document.getElementById('btn-dark-mode').innerHTML;
+    document.getElementById('btn-dark-mode').innerHTML = icon.replace(/fa-sun|fa-moon/gi, function(matched) {
+        return mapIcons[matched];
+    });
+}
+
+function insertDarkModeButton() {
+    var i = document.createElement('i');
+    i.setAttribute('class','fa-solid fa-sun p-2')
+    document.getElementById('btn-dark-mode').appendChild(i);
 }
 
 loadBreakingNews();
 loadDate();
 fillUpdatedAgos();
+insertDarkModeButton();
