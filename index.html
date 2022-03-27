@@ -17,22 +17,21 @@
 </head>
 <body>
     <header class="bg-dark d-none d-md-block">
-        <div class="d-none d-lg-flex justify-content-center">
-            <div class="container mt-4 d-flex justify-content-end" id="search-login-row">
-                <div class="col-lg-3 col-lg-2 mb-4 me-4" id="search-login-container">
-                    
-                </div>
-            </div>
+        <div class="container d-flex justify-content-center align-items-end pt-3">
+            <a href="index.html"><img src="news_logo.png"/></a>
         </div>
     </header>
     <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
       
             <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link text-light" href="index.html">Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#">Asia</a>
                     </li>
@@ -68,15 +67,17 @@
                 </ul>
               <form class="input-group rounded form-inline w-auto rounded px-2">
                 <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                <span class="input-group-text border-0" id="search-addon">
+                <span class="input-group-text" id="search-addon">
                     <i type='submit' class="fas fa-search"></i>
                 </span>
               </form>
-                <button type="button" class="btn btn-outline-primary">
+              <div class="d-flex justify-content-between mt-2 mt-lg-0">
+                <button type="button" class="btn btn-outline-danger">
                     <span>Login</span>
                     <i class="fa fa-sign-in" aria-hidden="true"></i>
                 </button>
                 <button type='button' class='btn btn-outline-light ms-2 rounded-circle p-0' onclick="darkMode()" id="btn-dark-mode" title="Toggle dark mode"></button>
+              </div>
             </div>
         </div>
     </nav>
@@ -89,8 +90,8 @@
             <div class="row my-3">
                 <div class="col">
                     <div id="breaking-news">
-                        <span class="px-2">BREAKING:</span>
-                        <ul class="list-unstyled ps-3"></ul>
+                        <span class="px-2 float-start">BREAKING:</span>
+                        <ul class="list-unstyled ps-lg-3 float-lg-start"></ul>
                     </div>
                 </div>
             </div>

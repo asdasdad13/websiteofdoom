@@ -74,10 +74,6 @@ h1:not(.article-story-container h1) {
     object-fit: cover;
 }
 
-h3, #latest-news-col .card-body, #latest-news-col .card-title, #breaking-news-title {
-    margin: 0;
-}
-
 h2, p, .col, .col-md-4, .card-body, .flex-row, ul  {
     padding: 0 !important;
 }
@@ -164,7 +160,6 @@ h2 {
 #breaking-news span {
     background-color: #A30F15;
     color: #FFF;
-    float: left;
     height: 2.5rem;
 }
 
@@ -175,7 +170,6 @@ h2 {
 #breaking-news ul {
     padding-left: 1rem;
     color: #A30F15;
-    float: left;
     animation: ticker 10s cubic-bezier(1,0,.5,0) infinite;
 }
 
@@ -318,6 +312,6 @@ section.tagged-articles img {
 
 @media (min-width: 920px) {
     .navbar-brand {
-        max-height: 60px;
+        max-height: 20px;
     }
 }
