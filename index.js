@@ -134,12 +134,9 @@ function updatedAgo(publishedTime) {
 }
 
 function fillUpdatedAgos() {
-    document.getElementsByClassName('updatedAt')[0].innerHTML = updatedAgo(new Date('2022-03-15T16:15:00Z'));
-    document.getElementsByClassName('updatedAt')[1].innerHTML = updatedAgo(new Date('2022-03-15T16:15:00Z'));
-    document.getElementsByClassName('updatedAt')[2].innerHTML = updatedAgo(new Date('2022-03-10T09:51:00Z'));
-    document.getElementsByClassName('updatedAt')[3].innerHTML = updatedAgo(new Date('2022-03-10T09:51:00Z'));
-    document.getElementsByClassName('updatedAt')[4].innerHTML = updatedAgo(new Date('2022-03-10T00:59:00Z'));
-    document.getElementsByClassName('updatedAt')[5].innerHTML = updatedAgo(new Date('2022-03-10T00:59:00Z'));
+    document.getElementsByClassName('updatedAt')[0].innerHTML = document.getElementsByClassName('updatedAt')[1].innerHTML = updatedAgo(new Date('2022-03-15T16:15:00Z'));
+    document.getElementsByClassName('updatedAt')[2].innerHTML = document.getElementsByClassName('updatedAt')[3].innerHTML = updatedAgo(new Date('2022-03-10T09:51:00Z'));
+    document.getElementsByClassName('updatedAt')[4].innerHTML = document.getElementsByClassName('updatedAt')[5].innerHTML = updatedAgo(new Date('2022-03-10T00:59:00Z'));
 }
 
 var mapClrs = {
@@ -174,3 +171,4 @@ function insertDarkModeButton() {
 loadBreakingNews();
 loadDate();
 insertDarkModeButton();
+fillUpdatedAgos();

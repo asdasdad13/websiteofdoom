@@ -37,8 +37,11 @@
             </div>
         </div>
     </header>
-    <nav class='sticky-top navbar navbar-expand-md bg-dark'>
-        <div class="collapse navbar-collapse d-flex justify-content-center">
+    <nav class='sticky-top navbar navbar-expand-md navbar-dark bg-dark'>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-center" id='top-navbar'>
             <ul class='navbar-nav justify-content-between align-items-end row container text-center' aria-hidden="true">
                 <div class="col d-flex justify-content-around">
                     <li class="nav-item col-md"><a class="nav-link text-light" href='#'>Asia</a></li>
@@ -49,7 +52,7 @@
                 <div class="col-md-2 p-0">
                     <li class='nav-item navbar-header'>
                         <a class='text-hide navbar-brand nav-link active w-100 position-relative d-flex align-items-end' title='Home' href="/index.html">
-                            <img class='position-absolute w-100' src="news_logo.png"/>
+                            <!-- <img class='position-absolute w-100' src="news_logo.png"/> -->
                             <h1 class='d-none text-hide'>The News Channel</h1>
                         </a>
                     </li>
@@ -104,9 +107,9 @@
                             </h2>
                         </div>
                     </div>
-                    <div class="row border-bottom border-top py-3" id="top-stories-and-latest">
-                        <div class="col-md d-flex flex-column border-end p-0" id="top-4-stories">
-                            <div class='me-3 featured-story' id="top-1-story">
+                    <div class="row border-bottom border-top py-3">
+                        <div class="col-md d-flex flex-column border-end p-0">
+                            <div class='me-3 featured-story'>
                                 <article>
                                     <div class="card">
                                         <div class="row g-0">
@@ -120,8 +123,8 @@
                                             </div>
                                             <div class="col-md">
                                                 <div class="card-img">
-                                                    <div class="carousel slide" data-bs-ride="carousel">
-                                                        <div class="carousel-inner">
+                                                    <div class="carousel slide" id='top-1-story-carousel' data-bs-ride="carousel">
+                                                        <div class="carousel-inner rounded">
                                                           <div class="carousel-item active">
                                                             <img src="world/images/IMG_1652.png" class="d-block w-100" alt="article-art">
                                                           </div>
@@ -129,11 +132,11 @@
                                                             <img src="world/images/IMG_1625-scaled.jpeg" class="d-block w-100" alt="article-art">
                                                           </div>
                                                         </div>
-                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#top-1-story-carousel" data-bs-slide="prev">
                                                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                           <span class="visually-hidden">Previous</span>
                                                         </button>
-                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#top-1-story-carousel" data-bs-slide="next">
                                                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                           <span class="visually-hidden">Next</span>
                                                         </button>
@@ -207,13 +210,13 @@
                                             <div class="card pt-1">
                                                 <div class='card-body'>
                                                     <p class="mb-1">
-                                                        <a href='#'>BUSINESS</a>
+                                                        <a class='text-muted' href='#'>BUSINESS</a>
                                                     </p>
                                                     <div class='card-title'>
                                                         <h3><a href='#' class='stretched-link'>Has Turkey dodged its sunflower oil crisis?</a></h3>
                                                     </div>
                                                     <div class="card-text mt-1">
-                                                        <p><span class="updatedAt"></span> ago</p>
+                                                        <p class='text-muted'><span class="updatedAt"></span> ago</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -226,13 +229,13 @@
                                             <div class="card pt-1">
                                             <div class='card-body'>
                                                 <p class="mb-1">
-                                                    <a href='#'>BUSINESS</a>
+                                                    <a class='text-muted' href='#'>BUSINESS</a>
                                                 </p>
                                                 <div class='card-title'>
                                                     <h3><a href='#' class='stretched-link'>Has Turkey dodged its sunflower oil crisis?</a></h3>
                                                 </div>
                                                 <div class="card-text mt-1">
-                                                    <p><span class="updatedAt"></span> ago</p>
+                                                    <p class='text-muted'><span class="updatedAt"></span> ago</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -244,13 +247,13 @@
                                             <div class="card pt-1">
                                                 <div class='card-body'>
                                                     <p class="mb-1">
-                                                        <a href='#'>TECH</a>
+                                                        <a class='text-muted' href='#'>TECH</a>
                                                     </p>
                                                     <div class='card-title'>
                                                         <h3><a href='#' class='stretched-link'>Can Ukraine's internet sustain longer-term attacks and destruction from Russia?</a></h3>
                                                     </div>
                                                     <div class="card-text mt-1">
-                                                        <p><span class="updatedAt"></span> ago</p>
+                                                        <p class='text-muted'><span class="updatedAt"></span> ago</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -263,13 +266,13 @@
                                             <div class="card pt-1">
                                                 <div class='card-body'>
                                                     <p class="mb-1">
-                                                        <a href='#'>TECH</a>
+                                                        <a class='text-muted' href='#'>TECH</a>
                                                     </p>
                                                     <div class='card-title'>
                                                         <h3><a href='#' class='stretched-link'>Can Ukraine's internet sustain longer-term attacks and destruction from Russia?</a></h3>
                                                     </div>
                                                     <div class="card-text mt-1">
-                                                        <p><span class="updatedAt"></span> ago</p>
+                                                        <p class='text-muted'><span class="updatedAt"></span> ago</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -282,13 +285,13 @@
                                             <div class="card pt-1">
                                                 <div class='card-body'>
                                                     <p class="mb-1">
-                                                        <a href='#'>WORLD</a>
+                                                        <a class='text-muted' href='#'>WORLD</a>
                                                     </p>
                                                     <div class='card-title'>
                                                         <h3><a href='#' class='stretched-link'>Turkmen students: Escaping from war-torn Ukraine</a></h3>
                                                     </div>
                                                     <div class="card-text mt-1">
-                                                        <p><span class="updatedAt"></span> ago</p>
+                                                        <p class='text-muted'><span class="updatedAt"></span> ago</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -301,13 +304,13 @@
                                             <div class="card pt-1">
                                                 <div class='card-body'>
                                                     <p class="mb-1">
-                                                        <a href='#'>WORLD</a>
+                                                        <a class='text-muted' href='#'>WORLD</a>
                                                     </p>
                                                     <div class='card-title'>
                                                         <h3><a href='#' class='stretched-link'>Turkmen students: Escaping from war-torn Ukraine</a></h3>
                                                     </div>
                                                     <div class="card-text mt-1">
-                                                        <p><span class="updatedAt"></span> ago</p>
+                                                        <p class='text-muted'><span class="updatedAt"></span> ago</p>
                                                     </div>
                                                 </div>
                                             </div>

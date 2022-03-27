@@ -13,7 +13,7 @@ body[class=dark-mode] {
     background: #000 !important;
 }
 
-h1 {
+h1:not(.article-story-container h1) {
     font-weight: bold;
     font-style: italic;
     border-bottom: 1px solid #a9bacc;
@@ -61,7 +61,6 @@ h1 {
 }
 
 .carousel.slide img {
-    /* width: 640px; */
     height: 350px;
 }
 
@@ -123,6 +122,10 @@ h2 {
     border-bottom: 1px solid #abbac9;
 }
 
+.tagged-articles h3 {
+    font-weight: bold;
+}
+
 .featured-story h3 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -134,10 +137,6 @@ h2 {
 
 #latest-news-col h3, #most-read-col h3 {
     font-size: 1.2rem;
-}
-
-#latest-news-col p {
-    color: #a8a8a8;
 }
 
 #latest-news-col .article-container:not(:last-of-type) {
@@ -206,6 +205,16 @@ h2 {
     }
 }
 
+.tagged-articles .card-body {
+    flex-basis: 0;
+}
+
+.tagged-articles .article-container:not(:last-child) {
+    border-bottom: 1px solid #abbac9;
+}
+.tagged-articles .article-container {
+    padding: 1rem 0;
+}
 
 #breaking-news-ticker {
     background-color: #A30F15;
@@ -301,4 +310,8 @@ h2 {
 
 section[id=news-categories] ul {
     list-style-position: inside;
+}
+
+section.tagged-articles img {
+    height: 13rem;
 }
