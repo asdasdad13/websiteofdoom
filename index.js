@@ -12,7 +12,6 @@ function scrollFunction() {
     }
   }
 
-btt.addEventListener('click', backToTop);
 
 function backToTop() {
     document.body.scrollTop = 0;
@@ -250,25 +249,18 @@ function fillUpdatedAgos() {
     document.getElementsByClassName('updatedAt')[5].innerHTML = updatedAgo(new Date('2022-03-10T00:59:00Z'));
 }
 
-function darkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-    element.outerHTML = element.outerHTML.replace(/bg-dark/g,'bg-light')
-    element.style.color = '#FFF';
-    element.style.backgroundColor = '#000';
-    element.outerHTML.backgroundColor = '#000';
-    document.getElementById('btn-dark-mode').setAttribute('onclick','lightMode()');
-    var nodes = document.querySelectorAll('.dark-mode .card, .dark-mode h2, .dark-mode time, .dark-mode .navbar .nav-item a, .dark-mode .navbar');
-    nodes.style.backgroundColor = '#000';
-    nodes.style.color = '#FFF';
+var mapClrs = {
+    dark: 'light',
+    light: 'dark',
 }
 
-function lightMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-    element.outerHTML = element.outerHTML.replace(/bg-light/g,'bg-dark');
-    element.style.color = '#FFF';
-    document.getElementById('btn-dark-mode').setAttribute('onclick','darkMode()');
+function darkMode() {
+    var element = document.getElementById('page');
+    element.outerHTML = element.outerHTML.replace(/dark|light/gi, function(matched) {
+        //simultaneously changes function name for btn-dark-mode
+        return mapClrs[matched];
+    });
+    document.body.classList.toggle("dark-mode");
 }
 
 loadBreakingNews();

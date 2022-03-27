@@ -7,12 +7,10 @@
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     width: 100%;
-    background-color: #FFF;
-    color: #000;
 }
 
-footer {
-    color: #FFF;
+body[class=dark-mode] {
+    background: #000 !important;
 }
 
 .border {
@@ -42,6 +40,7 @@ footer {
 
 .card {
     border: none;
+    background-color: transparent;
 }
 
 .card-body.text-center {
