@@ -8,33 +8,11 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     width: 100%;
     background-color: #FFF;
-    color: #000 !important;
-}
-
-.dark-mode {
-    background-color: black;
-    color: white;
-}
-
-.dark-mode .card, .dark-mode h2, .dark-mode time, .dark-mode .navbar .nav-item a, .dark-mode .navbar {
-    background-color: black;
-    color: white;
-}
-
-i {
-    padding: 0;
+    color: #000;
 }
 
 footer {
     color: #FFF;
-}
-
-.navbar {
-    background-color: #FFF;
-}
-
-.navbar .nav-item a {
-    color: black;
 }
 
 .border {

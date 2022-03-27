@@ -253,6 +253,22 @@ function fillUpdatedAgos() {
 function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
+    element.outerHTML = element.outerHTML.replace(/bg-dark/g,'bg-light')
+    element.style.color = '#FFF';
+    element.style.backgroundColor = '#000';
+    element.outerHTML.backgroundColor = '#000';
+    document.getElementById('btn-dark-mode').setAttribute('onclick','lightMode()');
+    var nodes = document.querySelectorAll('.dark-mode .card, .dark-mode h2, .dark-mode time, .dark-mode .navbar .nav-item a, .dark-mode .navbar');
+    nodes.style.backgroundColor = '#000';
+    nodes.style.color = '#FFF';
+}
+
+function lightMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    element.outerHTML = element.outerHTML.replace(/bg-light/g,'bg-dark');
+    element.style.color = '#FFF';
+    document.getElementById('btn-dark-mode').setAttribute('onclick','darkMode()');
 }
 
 loadBreakingNews();
