@@ -26,7 +26,10 @@ function loadBreakingNews() {
     for (i in headlines)
     {
         var new_li = document.createElement("li");
-        new_li.innerHTML = headlines[i];
+        var new_a = document.createElement('a');
+        new_a.innerHTML = headlines[i];
+        new_a.setAttribute('href', '#');
+        new_li.appendChild(new_a);
         breakingNewsList.appendChild(new_li);
     }
 }
@@ -245,6 +248,11 @@ function fillUpdatedAgos() {
     document.getElementsByClassName('updatedAt')[3].innerHTML = updatedAgo(new Date('2022-03-10T09:51:00Z'));
     document.getElementsByClassName('updatedAt')[4].innerHTML = updatedAgo(new Date('2022-03-10T00:59:00Z'));
     document.getElementsByClassName('updatedAt')[5].innerHTML = updatedAgo(new Date('2022-03-10T00:59:00Z'));
+}
+
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
 }
 
 loadBreakingNews();

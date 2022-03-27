@@ -30,38 +30,45 @@
                         <span>Login</span>
                         <i class="fa fa-sign-in" aria-hidden="true"></i>
                     </button>
+                    <button type='button' class='btn btn-outline-dark rounded-circle' onclick="darkMode()" id="btn-dark-mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
                 </div>
             </div>
         </header>
-        <nav class='navbar sticky-top navbar-expand-md navbar-light row border-bottom'>
-            <ul class='navbar-nav text-center' aria-hidden="true">
-                <li class="nav-item col-md"><a class="nav-link" href='#'>Asia</a></li>
-                <li class="nav-item col-md"><a class="nav-link" href='#'>Business</a></li>
-                <li class="nav-item col-md"><a class="nav-link" href='#'>Politics</a></li>
-                <li class="nav-item col-md"><a class="nav-link" href='#'>Tech</a></li>
-                <li class="nav-item col-md-2 d-flex align-items-end">
-                    <div class='navbar-header col-md-2 d-flex align-items-end'>
-                        <a class='text-hide navbar-brand nav-link active position-absolute col-md-2 p-0' title='Home' href="#">
-                            <h1 style="display:none">The News Channel</h1>
-                            <img class='w-100' src="images/news.png"/>
-                        </a>
-                    </div>
-                </li>
-                <li class="nav-item col-md"><a class="nav-link" href='#'>Life</a></li>
-                <li class="nav-item col-md"><a class="nav-link" href='#'>Sports</a></li>
-                <li class="nav-item col-md"><a class="nav-link" href='#'>Entertainment</a></li>
-                <li class="nav-item col-md dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-                    <ul class='dropdown-menu' labelledby='navbarDropdown'>
-                        <li><a class="dropdown-item" href='#'>Podcasts</a></li>
-                        <li><a class="dropdown-item" href='#'>Opinions</a></li>
-                        <li><a class="dropdown-item" href='#'>Home Delivery</a></li>
+        <nav class='sticky-top row navbar navbar-expand-md border-bottom'>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                    <ul class='navbar-nav justify-content-between container-fluid' aria-hidden="true">
+                        <li class="nav-item"><a class="nav-link" href='#'>Asia</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#'>Business</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#'>Politics</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#'>Tech</a></li>
+                        <li class="nav-item col-md-2 d-flex align-items-end">
+                            <div class='navbar-header d-flex align-items-end'>
+                                <a class='text-hide navbar-brand nav-link active position-absolute col-md-2 p-0' title='Home' href="#">
+                                    <h1 class='d-none'>The News Channel</h1>
+                                    <img class='w-100' src="images/news.png"/>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href='#'>Life</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#'>Sports</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#'>Entertainment</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                            <ul class='dropdown-menu' labelledby='navbarDropdown'>
+                                <li><a class="dropdown-item" href='#'>Podcasts</a></li>
+                                <li><a class="dropdown-item" href='#'>Opinions</a></li>
+                                <li><a class="dropdown-item" href='#'>Home Delivery</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
 
-        <div class="row text-center border-bottom justify-content-center" id="time-banner">
+        <div class="row text-center border-bottom justify-content-center d-none d-md-block" id="time-banner">
             <time id="current_date"></time>
         </div>
         <div class="row my-3">
@@ -289,7 +296,7 @@
                     </div>
                 </div>
                 <div class="row float-end mt-1" id="view-more-latest-stories-btn">
-                    <a href='#' class="btn btn-outline-dark" role="button">
+                    <a href='#' class="btn btn-outline-dark d-flex align-items-center" role="button">
                         VIEW MORE LATEST STORIES
                         <i class="fa-solid fa-chevron-right"></i>
                     </a>
@@ -512,7 +519,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='col-md-3' id="most-read-col">
+                    <div class='col-md-3 d-none d-mg-block' id="most-read-col">
                         <div class="col-md p-3 border border-danger">
                             <h2 class="text-center m-auto pt-2">MOST READ</h2>
                             <div class="row g-0 article-container">
@@ -643,7 +650,7 @@
                 </div>
             </section>
             <button type="button" class="btn btn-primary" id="btn-back-to-top">
-                <i class="fas fa-arrow-up p-0"></i>
+                <i class="fas fa-arrow-up"></i>
             </button>
         </div>
     </div>

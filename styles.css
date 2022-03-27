@@ -7,6 +7,22 @@
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     width: 100%;
+    background-color: #FFF;
+    color: #000 !important;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .card, .dark-mode h2, .dark-mode time, .dark-mode .navbar .nav-item a, .dark-mode .navbar {
+    background-color: black;
+    color: white;
+}
+
+i {
+    padding: 0;
 }
 
 footer {
@@ -15,6 +31,10 @@ footer {
 
 .navbar {
     background-color: #FFF;
+}
+
+.navbar .nav-item a {
+    color: black;
 }
 
 .border {
@@ -115,7 +135,7 @@ h2 {
     padding-bottom: 1rem;
 }
 
-.card-title:hover, a:hover {
+.card-title:hover, a:not(a[class*='btn']):hover {
     text-decoration: underline;
 }
 
@@ -212,12 +232,7 @@ h2 {
     height: 200px;
 }
 
-.btn {
-    display: flex;
-    align-items: center;
-}
-
-.btn i {
+#view-more-latest-stories-btn i {
     font-size: 0.6rem;
     padding-left: 0.5rem;
 }
@@ -273,11 +288,4 @@ h2 {
 
 section[id=news-categories] ul {
     list-style-position: inside;
-}
-
-@media screen and (min-width: 768px)
-{
-    .navbar-brand {
-        background-position: bottom;
-    }
 }
