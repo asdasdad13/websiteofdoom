@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Easily keep up with the latest news and updates with The News Channel!">
+    <meta name="author" content="The News Channel">
+    <title>Russians against war are fleeing state crackdowns</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+<body>
+    <header class="bg-dark">
+        <div class="d-flex justify-content-center">
+            <div class="container mt-4 d-flex justify-content-end" id="search-login-row">
+                <div class="col-md-3 col-lg-2 mb-4 me-4" id="search-login-container">
+                    <form class="input-group rounded form-inline">
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                        <span class="input-group-text border-0" id="search-addon">
+                            <i type='submit' class="fas fa-search"></i>
+                        </span>
+                    </form>
+                    <div class="col mt-md-2">
+                        <button type="button" class="btn btn-outline-primary">
+                            <span>Login</span>
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        </button>
+                        <button type='button' class='btn btn-outline-light ms-2 rounded-circle p-0' onclick="darkMode()" id="btn-dark-mode" title="Toggle dark mode"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class='sticky-top navbar navbar-expand-md bg-dark'>
+        <div class="collapse navbar-collapse d-flex justify-content-center">
+            <ul class='navbar-nav justify-content-between align-items-end row container text-center' aria-hidden="true">
+                <div class="col d-flex justify-content-around">
+                    <li class="nav-item col-md"><a class="nav-link text-light" href='#'>Asia</a></li>
+                    <li class="nav-item col-md"><a class="nav-link text-light" href='#'>Business</a></li>
+                    <li class="nav-item col-md"><a class="nav-link text-light" href='#'>Politics</a></li>
+                    <li class="nav-item col-md"><a class="nav-link text-light" href='#'>Tech</a></li>
+                </div>
+                <div class="col-md-2 p-0">
+                    <li class='nav-item navbar-header'>
+                        <a class='text-hide navbar-brand nav-link active w-100 position-relative d-flex align-items-end' title='Home' href="/index.html">
+                            <img class='position-absolute w-100' src="news_logo.png""/>
+                            <h1 class='d-none text-hide'>The News Channel</h1>
+                        </a>
+                    </li>
+                </div>
+                <div class="col d-flex justify-content-around">
+                    <li class="nav-item col-md"><a class="nav-link text-light" href='#'>Life</a></li>
+                    <li class="nav-item col-md"><a class="nav-link text-light" href='#'>Sports</a></li>
+                    <li class="nav-item col-md"><a class="nav-link text-light" href='#'>Entertainment</a></li>
+                    <li class="nav-item col-md dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                        <ul class='dropdown-menu bg-dark' labelledby='navbarDropdown'>
+                            <li><a class="dropdown-item text-light bg-light" href='#'>Podcasts</a></li>
+                            <li><a class="dropdown-item text-light bg-light" href='#'>Opinions</a></li>
+                            <li><a class="dropdown-item text-light bg-light" href='#'>Home Delivery</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <div class='text-dark' id="page">
+        <div class='container-md'>
+            <div class="row text-center border-bottom justify-content-center d-none d-md-block" id="time-banner">
+                <time id="current_date"></time>
+            </div>
+            <div class="row my-3">
+                <div class="col">
+                    <div id="breaking-news">
+                        <span class="px-2">BREAKING:</span>
+                        <ul class="list-unstyled ps-3"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main-content">
+                <div class="row">
+                    <div class="col-md-9 article-story-container">
+                        <h1><b>Russians against war are fleeing state crackdowns</b></h1>
+                        <div class="d-flex justify-content-between my-4">
+                            <span>Writer: <a href='#' class="author">Arzu Geybullayeva</a></span>
+                            <span>March 18, 2022 | 4:29PM</span>
+                        </div>
+                        <div class="story-content">
+                            <div class="story-media">
+                                <figure class="figure">
+                                    <img src="/images/IMG_1652.png" class="figure-img img-fluid rounded" alt="Russians against war charity concert in Istanbul.">
+                                    <figcaption class="figure-caption">Russians against war charity concert in Istanbul. Photo courtesy of the author.</figcaption>
+                                </figure>
+                            </div>
+                            <p>
+                                In a meeting room in Istanbul, a group of Russian journalists, formerly based in Russia, gathered to talk about their plans moving forward. They were organized but also looked worried. Most of those in the room were journalists from an independent online television channel, TV Rain (Dojzd), others from an online platform called The Village and Semnasem.</p>
+                                <p>They were concerned about their futures, closed borders, and their livelihoods, but mostly for the friends and family they left behind. The fear of persecution still looms.</p>
+                                <p>In Russia, a new law on fake news that was adopted on March 4 imposes up to 15 years in jail as well as steeper fines, for spreading “fake” news about the country’s armed forces. The Kremlin has also banned media organizations from using the word “war” when describing the current invasion of Ukraine. On March 16, Russia’s President, Vladimir Putin, described those who have left the country or are planning to leave, and citizens who have been vocal about their anti-war sentiments as traitors and scum.</p>
+                                <p>“If that is the price to pay for condemning this war, then so be it,” said one freelance journalist who fled Russia for Turkey in the past weeks in an interview with Global Voices.<br/>But it is not just journalists who are fleeing Russia leaving their lives behind. Students, teachers, families with young children, activists, and even a prima ballerina are among those who have fled a country that is growing more isolated each day in light of economic and political sanctions. “They didn’t just take away our future. They took away our past,” said Polina Borodina, a Moscow playwright who came to Istanbul in early March, to the New York Times. Turkey, Georgia, Armenia, Kazakhstan, and Kyrgyzstan are among the top destinations that Russians can travel to without visas. One economist at the University of Chicago, Konstantin Sonin, said some 200,000 Russians fled before March 10.</p>
+                            <div class="story-media">
+                                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I do not compare Russians&#39; hardship with that of Ukrainians who are being shelled by the Russian army, but more than 200,000 people fled Russia during the last 10 days. The tragic exodus not seen for a century.</p>&mdash; Konstantin Sonin (@k_sonin) <a href="https://twitter.com/k_sonin/status/1501136362002546688?ref_src=twsrc%5Etfw">March 8, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                            <p>According to the Georgian Ministry of Tourism, 20,876 Russians arrived in February 2022. Though Turkey does not have up-to-date numbers on Russian citizens arriving in the country, in January 2022, Russians made up the bulk of tourists, with 134,215 incoming visitors. Armenia has not reported the recent numbers. But Sonin, in a follow-up tweet to the accuracy of his estimate notes, “Armenian gov’t gave a number of 80K there; Tbilisi mayor said 20-25K there. There were more flights to Istanbul than to Erevan each day, and on larger planes. Plus Tel Aviv, Almaty, Bishkek + tiny, but constant stream via Estonia, Latvia, and Finland. So, 200K is a lower bound.”</p><p>Walking the streets of some of Istanbul’s neighborhoods there is a sense that there are more Russian-speaking visitors in recent weeks. One Russian woman who spoke to Global Voices said she was a yoga teacher in Moscow, who came here on March 5 and is now planning to leave for Bali, where she has friends she hopes will help her. With an analog camera hanging over her shoulder, she smiles kindly, saying she prefers to take portraits. “It’s old, but it’s great,” she says, standing outside a local pharmacy in Istanbul’s Fatih district with a small group of other Russians, who are trying to buy medical and food supplies to send to Ukraine. One group member explains there is a list circulating on the telegram of medical and food supplies that are needed in war-torn Ukraine.</p><p>Others are helping through their music. To protest Russia’s invasion of Ukraine and fundraise for fleeing Ukrainian refugees, Russian rap artist Oxxxymiron, also known as Miron Fyodorov, kicked off a series of concerts called “Russians against war.” The first stop was a lively neighborhood of Istanbul’s Kadikoy district, a crowd of mostly Russians who recently fled Russia slowly gathered outside the concert venue.</p>
+                            <div class="story-media">
+                                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Russian rapper <a href="https://twitter.com/norimyxxxo?ref_src=twsrc%5Etfw">@norimyxxxo</a> is fighting back against the Kremlin&#39;s war. His weapon of choice?<br>A series of charity concerts titled &quot;Russians Against War&quot;<a href="https://twitter.com/JomanaCNN?ref_src=twsrc%5Etfw">@JomanaCNN</a> has the story: <a href="https://t.co/HMha0QdLdW">pic.twitter.com/HMha0QdLdW</a></p>&mdash; Connect the World (@CNNConnect) <a href="https://twitter.com/CNNConnect/status/1504481180653027336?ref_src=twsrc%5Etfw">March 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                            <p>Outside, the crowd waiting to get in spontaneously starts chanting, “No to war,” which they continue to repeat throughout the concert too.</p>
+                            <div class="story-media">
+                                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Crowd chants “no to war” <a href="https://t.co/c88nVroJ5L">pic.twitter.com/c88nVroJ5L</a></p>&mdash; Arzu Geybulla (@arzugeybulla) <a href="https://twitter.com/arzugeybulla/status/1503807561031688199?ref_src=twsrc%5Etfw">March 15, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                            <p>Oxxxymiron has canceled all six of his upcoming concerts in Russia. In a video message shared via his Instagram, the rapper said, “[The war in Ukraine] is a catastrophe. It is a crime. This is why I am postponing all six concerts for an indefinite time. I cannot entertain you while Ukraine is bombed by Russia. While residents in Kiev are forced to hide in shelters, while people are dying.”</p>
+                                <p>In the next video, the rapper tells his fans in Russia who categorically reject this war that he is organizing a series of charity concerts called “Russians against war.” “Right now, it is impossible to organize an anti-war concert in Russia because as insane as it may sound, everything that is anti-war is currently illegal. There is total censorship and anyone who speaks out against the war in any way becomes a potential target for criminal prosecution.”</p>
+                                <p>All proceeds from the concerts are going to Ukrainian refugees.</p>
+                                <p>For Nigina Beroeva, a freelance journalist who came to Istanbul on March 3, that possibility of persecution rings close to home. Based in Moscow, Nigina left her family, life, and home, in what she describes as an emotional decision on the eve of the parliament adopting the law on fakes. “According to this law, Russian citizens cannot call the war a war, cannot use any other sources of information but the Ministry of Defense of Russian Federation. … And to work as a journalist under such conditions is impossible. If you violate this law, you face 15 years in jail. It was a very emotional decision. Yes, we were afraid that they are going to close the country. We were afraid that journalists are going to get jailed,” Nigina told Global Voices.</p>
+                                <p>Nigina is currently documenting stories of Russians who have fled their homes to Istanbul. For her, each interview is like hearing her own story over and over. “I am filming people. I am filming their stories. And I understand that it is my story too. And that I won’t be able to return after this assignment. There is nowhere to go.”</p>
+                                <p>Back at the concert in Kadikoy, Evgeniy, who arrived in Istanbul a week ago, stood outside in a one-man solidarity protest against the war, holding a sign that said, “we allowed for this war to happen. We are too busy now.” In an interview, Evgeniy explained that when Russia annexed Crimea in 2014, Russians were too busy to pay attention. “No one expected that what happened now would happen. And I think right now, here in Istanbul, where there are many Russians, they are still very busy going about their business: Opening bank accounts and applying for residency permits. But there is still war raging in Ukraine and while I understand that people may have important things to attend to, it cannot be more important than what is going on in Ukraine.”</p>
+                            <div class="story-media">
+                                <figure class="figure">
+                                    <img src="/images/IMG_1625-scaled.jpeg" width="800px class="figure-img img-fluid rounded" alt="Russians against war charity concert in Istanbul.">
+                                    <figcaption class="figure-caption">Evgeniy, holding his sign outside the concert venue. Photo courtesy of the author.</figcaption>
+                                </figure>
+                            </div>
+                            <p>Nigina agrees. At the apartment where Nigina and a few other Russian journalists are temporarily staying, Nigina says, “the moral dilemmas [fleeing Russians] are facing, are far more important than the non-working credit cards. How do we talk to Ukrainians? How do we answer the accusations?”</p>
+                            <p>As of March 10, all visa and master cards issued by Russian banks stopped working due to sanctions. Like many others who are planning their new lives outside of Russia, Nigina is still unsure where she will end up and whether she will ever go back. “I don’t know when I will go back home and whether I can go back. Maybe I can,” she said. What she does know is that she is against this war, just like countless others inside and outside Russia whose voices are muted by the actions of one man, his aids, and his propaganda machine.</p>
+                        </div>
+                        <footer class="story-footer">
+                            <div class="row g-0 mt-5 pt-2 border-top">
+                                <div class="col story-footer-categories">
+                                    <div class="topic-categories">
+                                        <span>Categories: </span>
+                                        <ul class="list-inline-group d-inline">
+                                            <li class="list-inline-item">Arts & Culture</li>
+                                            <li class="list-inline-item">Censorship</li>
+                                            <li class="list-inline-item">Economics & Business</li>
+                                            <li class="list-inline-item">Freedom of Speech</li>
+                                            <li class="list-inline-item">Human Rights</li>
+                                            <li class="list-inline-item">Media & Journalism</li>
+                                            <li class="list-inline-item">Migration & Immigration</li>
+                                            <li class="list-inline-item">Music</li>
+                                            <li class="list-inline-item">Politics</li>
+                                            <li class="list-inline-item">Protest</li>
+                                            <li class="list-inline-item">Refugees</li>
+                                            <li class="list-inline-item">War & Conflict</li>
+                                            <li class="list-inline-item"><a href='#'>Russia invades Ukraine</a></li>
+                                        </ul>  
+                                    </div>
+                                    <div class="regional-categories mt-1">
+                                        <span>Regional categories: </span>
+                                        <ul class="list-inline-group d-inline">
+                                            <li class="list-inline-item">Central Asia & Caucasus</li>
+                                            <li class="list-inline-item">Eastern & Central Europe</li>
+                                            <li class="list-inline-item">Middle East & North Africa</li>
+                                            <li class="list-inline-item">Armenia</li>
+                                            <li class="list-inline-item">Georgia</li>
+                                            <li class="list-inline-item">Russia</li>
+                                            <li class="list-inline-item">Turkey</li>
+                                        </ul>  
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                        <section class="recommended-stories">
+                            <div class="mt-5">
+                                <h2>View more on this topic</h2>
+                                <div class="row g-0 mt-3">
+                                    <div class="col-md-4 article-container">
+                                        <article>
+                                            <div class='card-story'>
+                                                <div class="card">
+                                                    <img class='card-img-top' src='/images/Screen-Shot-2022-03-10-at-10.42.12-AM-800x396.png' alt='article art'/>
+                                                    <div class='card-body'>
+                                                        <div class='card-title'>
+                                                            <h3>
+                                                                <a href='#' class='stretched-link'>Can Ukraine's internet sustain longer-term attacks and destruction from Russia?</a>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-md-4 ms-3 article-container">
+                                        <article>
+                                            <div class='card-story'>
+                                                <div class="card">
+                                                    <img class='card-img-top' src='/images/04b4ef01-482a-4d28-a566-c38c28b401ed-800x434.jpg' alt='article art'/>
+                                                    <div class='card-body'>
+                                                        <div class='card-title'>
+                                                            <h3>
+                                                                <a href='#' class='stretched-link'>Turkmen students: Escaping from war-torn Ukraine</a>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-light">
+        <div class="container-md">
+            <div class="row footer-main py-5 d-flex justify-content-center">
+                <div class="col-md me-5">
+                    <section id="news-categories">
+                        <div class="row">
+                            <h2 class="w-auto">News Categories</h2>
+                        </div>
+                        <div class="row">
+                            <ul class="m-0">
+                                <li><a href="#">Asia</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Politics</a></li>
+                                <li><a href="#">Tech</a></li>
+                                <li><a href="#">Life</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Entertainment</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md me-5">
+                    <section id="about-us">
+                        <nav>
+                            <div class="row">
+                                <h2 class="mb-3 w-auto">About TNC</h2>
+                            </div>
+                            <div class="row">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Advertise with us</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </section>
+                </div>
+                <div class="col-md">
+                    <section id="socials-and-sub">
+                        <div class="socials">
+                            <p class="d-inline-block me-2">GET UPDATES ON YOUR TIMELINE</p>
+                            <div class="d-inline-block">
+                                <ul class="list-inline social-icons" aria-labelledby="socials">
+                                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f"></i></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="mt-2 d-flex flex-column align-items-center" id="newsletter-sub">
+                                <h2 class="mb-3">Get our newsletter in your inbox today.</h2>
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text" for="inputGroupSelect01">Newsletter type</label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option value="morning" selected>Morning Brief</option>
+                                        <option value="evening">Evening Brief</option>
+                                        <option value="opinions">The News Channel Opinions</option>
+                                        <option value="all">All of the above</option>
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control" placeholder="Your email address" aria-label="Subscription email address">
+                                </div>
+                                <button type="submit" class="btn btn-primary" id="btn-sub-now">Subscribe now</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 footer-copyright d-flex justify-content-center">
+            Copyright © 2021 TNC Ltd. All rights reserved.
+        </div>
+    </footer>
+    <script type="text/javascript" src='../index.js'></script>
+</body>
+</html>
