@@ -267,7 +267,7 @@ h2 {
     margin-right: 0.2rem !important;
 }
 
-.social-icons .fa-brands, .fa-solid {
+.social-icons, .fa-brands, .fa-solid {
 	font-size: 1.3em;
 }
 
@@ -314,4 +314,10 @@ section[id=news-categories] ul {
 
 section.tagged-articles img {
     height: 13rem;
+}
+
+@media (min-width: 920px) {
+    .navbar-brand {
+        max-height: 60px;
+    }
 }
