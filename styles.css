@@ -56,22 +56,8 @@ h1:not(.article-story-container h1) {
     align-items: center;
 }
 
-.featured-story .card-img-bottom, .featured-story .card-img, .featured-story .card-img-top {
-    min-height: 40vh;
-}
-
 .carousel.slide img {
     height: 350px;
-}
-
-.card-text {
-    width: 80%;
-}
-
-.card-img-top:not(.featured-story .card-img-top) {
-    width: 100%;
-    height: 10vw;
-    object-fit: cover;
 }
 
 h2, p, .col, .col-md-4, .card-body, .flex-row, ul  {
