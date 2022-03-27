@@ -71,12 +71,28 @@ h2, p, .col, .col-md-4, .card-body, .flex-row, ul  {
     padding: 0 !important;
 }
 
+.recommended-stories h3 {
+    font-size: 1.3rem;
+}
+
 .news-category {
     margin-bottom: 7rem;
 }
 
 .story-content p {
     font-size: 1.3rem;
+}
+
+.story-footer-categories li:not(:last-child):after {
+    content: ',';
+}
+
+.story-footer-categories span {
+    font-weight: bold;
+}
+
+.article-story-container a {
+    color: #c64c05
 }
 
 a, a:hover {
@@ -86,10 +102,6 @@ a, a:hover {
 
 .story-media {
     padding: 1rem 0;
-}
-
-a[class=author] {
-    color: #c64c05;
 }
 
 h2 {
