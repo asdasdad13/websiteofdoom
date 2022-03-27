@@ -53,6 +53,11 @@ body[class=dark-mode] {
     min-height: 40vh;
 }
 
+.carousel.slide img {
+    /* width: 640px; */
+    height: 350px;
+}
+
 .card-text {
     width: 80%;
 }
