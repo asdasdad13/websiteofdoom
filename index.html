@@ -90,38 +90,34 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-2 mb-lg-5">
-                <div class="col">
-                    <div id="breaking-news">
-                        <span class="px-2 float-start">BREAKING:</span>
-                        <ul class="list-unstyled ps-3 float-lg-start"></ul>
-                    </div>
-                </div>
+            <div id="breaking-news">
+                <span class="px-2 float-start">BREAKING:</span>
+                <ul class="list-unstyled ps-3 float-lg-start"></ul>
             </div>
 
             <div id="main-content">
                 <section class="news-category">
-                    <div class="mt-2 d-lg-flex flex-row-reverse justify-content-between align-items-end">
+                    <div class="mt-lg-2 mt-5 d-lg-flex flex-row-reverse justify-content-between align-items-end">
                         <div class="socials d-none d-lg-block">
                             <p class="d-inline-block pe-2">FOLLOW US</p>
                             <ul class="list-inline d-inline-block social-icons" aria-labelledby="socials">
-                                <li class="list-inline-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="list-inline-item" aria-labelledby="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                 <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f"></i></i></a></li>
                                 <li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                                 <li class="list-inline-item"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
                             </ul>
                         </div>
-                        <h2>TOP STORIES</h2>
+                        <h2 class="text-center pt-2 pt-lg-0">TOP STORIES</h2>
                     </div>
-                    <div class="row border-bottom border-top py-lg-3">
-                        <div class="col-lg d-lg-flex flex-column border-end p-lg-0 mb-lg-5">
-                            <div class='me-lg-3 featured-story text-center text-lg-start'>
+                    <div class="row g-0 py-lg-3" id="top-4-stories">
+                        <div class="col-lg d-lg-flex flex-column p-lg-0 featured-story-wrapper">
+                            <div class='me-lg-3 featured-story text-center text-lg-start border-bottom'>
                                 <article>
                                     <div class="card">
                                         <div class="row g-0">
-                                            <div class="col-lg-4">
-                                                <div class="card-body">
-                                                    <div class="card-title pe-lg-3">
+                                            <div class="col-lg-4 pe-lg-3">
+                                                <div class="card-body mt-0 mb-3 mb-lg-0">
+                                                    <div class="card-title">
                                                         <h3><a href='world/russians-against-war-are-fleeing-state-crackdowns.html' class='stretched-link'><b>Russians against war are fleeing state crackdowns</b></a></h3>
                                                     </div>
                                                     <p class="card-text">Turkey is one of a handful of countries welcoming Russians.</p>
@@ -206,9 +202,7 @@
                         </div>
 
                         <div class="col-lg-3 ms-lg-3 p-lg-0 d-lg-flex flex-column" id="latest-news-col" onload="fillUpdatedAgos()">
-                            <h2>
-                                LATEST
-                            </h2>
+                            <h2 class="pt-2 pt-lg-0">LATEST</h2>
                             <div class='col-lg d-lg-flex flex-column justify-content-between'>
                                 <div class="article-container">
                                     <article>
@@ -335,7 +329,7 @@
                 </section>
 
                 <section class="news-category">
-                    <div class="row py-3 border-bottom border-top mb-lg-5" id="some-news-category-block">
+                    <div class="row py-3 border-bottom border-top mb-lg-5 mt-5" id="some-news-category-block">
                         <div class="col-lg pe-lg-3 ps-lg-0">
                             <div class="row text-center">
                                 <h2 class="border-0"><a href='#'>COVID-19</a></h2>
@@ -369,11 +363,11 @@
                                                 </div>
                                             </div>
                                             </div>
-                                    </div>
+                                        </div>
                                 </article>
                             </div>
                         </div>
-                        <div class="col-lg-6 article-container mt-0 featured-story border-start border-end px-lg-3">
+                        <div class="col-lg-6 article-container mt-0 featured-story px-lg-3">
                             <article>
                                 <div class='card-story'>
                                     <div class="card">
@@ -394,7 +388,7 @@
                         </div>
                         <div class="col-lg ps-lg-3 pe-lg-0">
                                 <div class="row text-center">
-                                    <h2 class="border-0"><a href='#'>EDUCATION</a></h2>
+                                    <h2 class="border-0 m-0"><a href='#'>EDUCATION</a></h2>
                                 </div>
                             <div class="article-container">
                                 <article>
@@ -434,11 +428,11 @@
 
                 <section class="news-category">
                     <div class="row">
-                        <div class="col-lg p-lg-0 pe-lg-3">
-                            <div class="" id="some-news-category-block-2">
-                                <h2><a href='#'>UKRAINE CRISIS</a></h2>
-                                <div class="row g-0 border-top pt-lg-3">
-                                    <div class='featured-story col-lg py-3 pe-lg-3'>
+                        <div class="col-lg p-lg-0 pe-lg-3 mt-lg-0 mt-5">
+                            <div id="some-news-category-block-2">
+                                <h2 class="pt-2 pt-lg-0"><a href='#'>UKRAINE CRISIS</a></h2>
+                                <div class="row g-0 pt-lg-3 featured-story-wrapper">
+                                    <div class='featured-story col-lg py-lg-3 pe-lg-3'>
                                         <div class="article-container">
                                             <article>
                                                 <div class='card-story'>
@@ -459,7 +453,7 @@
                                             </article>
                                         </div>
                                     </div>
-                                    <div class='col-lg-4 border-start border-end px-lg-3'>
+                                    <div class='col-lg-4 px-lg-3' id="beside-featured">
                                         <div class="article-container">
                                             <article>
                                                 <div class='card-story'>
@@ -547,7 +541,9 @@
                             </div>
                         </div>
                         <div class="col-lg-3 p-lg-3 border border-danger" id="most-read-col">
-                            <h2 class="text-center">MOST READ</h2>
+                            <div class="row text-center pt-lg-0 pt-lg-2">
+                                <h2 class='pt-2 pt-lg-0'>MOST READ</h2>
+                            </div>
                             <div class="article-container">
                                 <article>
                                     <div class='card-story'>
@@ -617,13 +613,15 @@
                     </div>
                 </section>
                 
-                <section class="news-category">
-                    <h2 class="w-auto"><a href='#'>DISCOVER</a></h2>
-                    <div class="row g-0 py-3 border-top border-bottom">
-                        <div class="col-lg me-lg-3 article-container border-end">
+                <section class="news-category" id="discover">
+                    <div class="row">
+                        <h2 class="p-lg-0 mt-5 mt-lg-0 pt-2"><a href='#'>DISCOVER</a></h2>
+                    </div>
+                    <div class="row py-3 border-bottom">
+                        <div class="col-lg article-container ps-lg-0">
                             <article>
                                 <div class='card-story'>
-                                    <div class="card pe-lg-3">
+                                    <div class="card">
                                         <img class='card-img-top' src='life/images/JA-FEATURE.jpeg' alt='article art'/>
                                         <div class='card-body'>
                                             <div class='card-title'>
@@ -636,9 +634,9 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-lg me-lg-3 article-container border-end">
+                        <div class="col-lg article-container">
                             <article>
-                                <div class='card-story pe-lg-3'>
+                                <div class='card-story'>
                                     <div class="card">
                                         <img class='card-img-top' src='life/images/Sumoni-Chapori-village-800x450.jpg' alt='article art'/>
                                         <div class='card-body'>
@@ -652,9 +650,9 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-lg me-lg-3 article-container border-end">
+                        <div class="col-lg article-container">
                             <article>
-                                <div class='card-story pe-lg-3'>
+                                <div class='card-story'>
                                     <div class="card">
                                         <img class='card-img-top' src='life/images/Sanjib1-800x450.jpeg' alt='article art'/>
                                         <div class='card-body'>
@@ -668,7 +666,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-lg artlg-icle-container">
+                        <div class="col-lg article-container pe-lg-0">
                             <article>
                                 <div class='card-story'>
                                     <div class="card">
