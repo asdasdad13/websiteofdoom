@@ -6,10 +6,7 @@
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
-}
-
-html, body {
-    max-width: 100%;
+    contain: paint;
 }
 
 body.dark-mode {
@@ -87,7 +84,7 @@ h2, p, .col, .card-body, .flex-row, ul  {
     font-weight: bold;
 }
 
-.article-story-container a, .about-us a {
+.article-story-container a, .about-us a, .contact-us a {
     color: #c64c05;
 }
 
