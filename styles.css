@@ -116,16 +116,13 @@ h2 {
     border-top: 1px solid #abbac9;
 }
 
-footer h2 {
+footer h2, section#about-us h2, section#contact-us h2 {
     border-top: none;
+    width: fit-content;
 }
 
 .tagged-articles h3 {
     font-weight: bold;
-}
-
-#latest-news-col .article-container:not(:last-of-type) {
-    border-bottom: 1px solid #abbac9;
 }
 
 .card:not(#latest-news-col .card) {
@@ -191,9 +188,7 @@ footer h2 {
         margin-top: -7.5rem;
     }
 }
-.tagged-articles .article-container:not(:last-child) {
-    border-bottom: 1px solid #abbac9;
-}
+
 .tagged-articles .article-container {
     padding: 1rem 0;
 }
@@ -264,11 +259,6 @@ footer h2 {
     font-size: 2rem;
 }
 
-#top-4-stories {
-    /* border-bottom: 1px solid #a9bacc !important;
-    border-top: 1px solid #a9bacc !important; */
-}
-
 .socials li {
     margin-right: 0.2rem !important;
 }
@@ -310,8 +300,8 @@ section.tagged-articles img {
     height: 13rem;
 }
 
-article:not(#some-news-category-block-2 article) {
-    /* border-bottom: 1px solid #a9bacc; */
+article {
+    border-bottom: 1px solid #a9bacc;
     padding-top: 1rem;
 }
 
@@ -337,12 +327,8 @@ article:not(#some-news-category-block-2 article) {
         border-top: 1px solid #a9bacc;
     }
 
-    #top-4-stories .featured-story-wrapper {
+    #top-4-stories .featured-story-wrapper,section#discover .article-container {
         border-right: 1px solid #a9bacc;
-    }
-
-    #top-4-stories .featured-story {
-        border-bottom: none;
     }
 
     #latest-news-col h2, .news-category h2 {
@@ -354,11 +340,19 @@ article:not(#some-news-category-block-2 article) {
         border-right: 1px solid #a9bacc;
     }
 
-    #some-news-category-block-2 .featured-story-wrapper {
+    #some-news-category-block-2 .featured-story-wrapper, .three-stories-in-a-row .card-story,#most-read-col .article-container {
         border-top: 1px solid #a9bacc;
     }
 
-    section#discover .article-container {
-        border-right: 1px solid #a9bacc;
+    #latest-news-col .article-container:not(:last-of-type),#some-news-category-block .top-article .card-story,.tagged-articles .article-container:not(:last-child) {
+        border-bottom: 1px solid #abbac9;
+    }
+
+    #some-news-category-block-2 h2 {
+        width: fit-content;
+    }
+
+    article {
+        border-bottom: none;
     }
 }
