@@ -6,7 +6,7 @@
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
-    contain: paint;
+    contain: style;
 }
 
 body.dark-mode {
@@ -92,16 +92,16 @@ h2, p, .col, .card-body, .flex-row, ul  {
     font-size: 1.3rem;
 }
 
-.news-category {
-    margin-bottom: 7rem;
-}
-
 .story-content p {
     font-size: 1.3rem;
 }
 
 .story-footer-categories li:not(:last-child):after {
     content: ',';
+}
+
+.story-footer-categories li {
+    margin: 0 !important;
 }
 
 .article-story-container a, #about-us a, #contact-us a {
