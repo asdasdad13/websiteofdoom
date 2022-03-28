@@ -65,13 +65,13 @@
                     </li>
                 </ul>
               <form class="input-group rounded form-inline w-auto rounded px-lg-4">
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                <input class="form-control bg-light" type="text" placeholder="Search" aria-label="Search">
                 <button type='submit' value='Submit' class="input-group-text" role="button" id="search-addon">
                     <i class="fas fa-search"></i>
                 </button>
               </form>
               <div class="d-flex justify-content-between mt-2 mt-lg-0">
-                <button type="button" class="btn btn-outline-danger">
+                <button type="button" class="btn btn-outline-primary">
                     <span>Login</span>
                     <i class="fa fa-sign-in" aria-hidden="true"></i>
                 </button>
@@ -104,8 +104,30 @@
                     <div class="row pt-3 p-lg-0">
                         <div class="col-lg p-lg-0">
                             <h1>Contact Us</h1>
-                            <p>If you come across something that you think will make the news, please contact us using one of the venues listed below, or send us a <a href='#'>WhatsApp message</a>. To contact the TNC website team, send an email to <a href='#'>onlinenews@tnc.com</a>. To reach our TV newsroom, send an email to <a href='#'>newsdesk@tnc.com</a>. Please email  <a href='#'>content_dist@tnc.com</a> if you have any questions about your rights to reproduce or host our content.</p>
+                            <p>If you come across something that you think will make the news, please contact us using one of the venues listed below, or send us a <a href='#'>WhatsApp message</a>.</p>
+                            <p>To contact the TNC website team, send an email to <a href='#'>onlinenews@tnc.com</a>.</p>
+                            <p>To reach our TV newsroom, send an email to <a href='#'>newsdesk@tnc.com</a>. Please email  <a href='#'>content_dist@tnc.com</a> if you have any questions about your rights to reproduce or host our content.</p>
                             <address>The News Channel Ltd.<br/>101 Smith Road<br/>Glasgow, KY 42141</address>
+                            <section id="send-us-a-tip">
+                                <div class="bg-secondary text-light rounded p-lg-3 col-lg-9">
+                                    <h2>Send Us A Tip</h2>
+                                    <form>
+                                        <div class="col-lg-4 mt-3">
+                                            <label for="name-input" class="form-label">Your Name</label>
+                                            <input type="text" class="form-control bg-light" id="name-input">
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <label for="email-input" class="form-label">Email address (Required)</label>
+                                            <input type="email" class="form-control bg-light" id="email-input" placeholder="name@example.com" required>
+                                        </div>
+                                        <div class="col-lg mt-3">
+                                            <label for="what-see-input" class="form-label">What did you see?</label>
+                                            <textarea class="form-control bg-light d-flex d-lg-block" id="what-see-input" rows="7" placeholder="Enter your tip..." required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                                    </form>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </section>
@@ -137,7 +159,7 @@
                                 <h2 class="mb-3">About TNC</h2>
                                 <ul class="list-unstyled">
                                     <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
                                     <li><a href="#">Careers</a></li>
                                     <li><a href="#">Advertise with us</a></li>
                                     <li><a href="#">Terms and Conditions</a></li>

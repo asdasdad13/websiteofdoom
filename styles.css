@@ -40,6 +40,30 @@ h1:not(.article-story-container h1) {
     border-bottom: 1px solid #a9bacc !important;
 }
 
+.btn-primary {
+    background-color: #c64c05;
+    border-color: #c64c05;
+}
+
+.btn-primary:hover {
+    background-color: #b34c10;
+    border-color: #b34c10;
+}
+
+.btn-outline-primary {
+    border-color: #c64c05;
+    color: #c64c05;
+}
+
+.btn-outline-primary:hover {
+    border-color: #c64c05;
+    background-color: #c64c05;
+}
+
+footer {
+    margin-top: 5rem;
+}
+
 .card-story {
     display: flex;
     flex-direction: column;
@@ -80,11 +104,7 @@ h2, p, .col, .card-body, .flex-row, ul  {
     content: ',';
 }
 
-.story-footer-categories span {
-    font-weight: bold;
-}
-
-.article-story-container a, .about-us a, .contact-us a {
+.article-story-container a, #about-us a, #contact-us a {
     color: #c64c05;
 }
 
