@@ -281,7 +281,7 @@ h2 {
     font-size: 2rem;
 }
 
-section#news-categories ul, section.about-us ul {
+section#news-categories-footer ul, section#about-us-footer ul, section#about-us ul {
     list-style-position: inside;
 }
 
