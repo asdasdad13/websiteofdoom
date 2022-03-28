@@ -6,7 +6,11 @@
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
-    width: 100%;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body[class=dark-mode] {
@@ -175,11 +179,6 @@ h2 {
         margin-top: -7.5rem;
     }
 }
-
-.tagged-articles .card-body {
-    flex-basis: 0;
-}
-
 .tagged-articles .article-container:not(:last-child) {
     border-bottom: 1px solid #abbac9;
 }
@@ -230,8 +229,14 @@ h2 {
     padding-left: 0.5rem;
 }
 
-#most-read-col .border-danger {
+#most-read-col.border-danger {
     border: 3px solid #c14e1d !important;
+}
+
+.story #most-read-col {
+    position: absolute;
+    top: 150%;
+    right: 0;
 }
 
 .socials li {
