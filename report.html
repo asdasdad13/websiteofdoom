@@ -1,3 +1,60 @@
-I had to assume that the articles were already sorted in order of date published, or else the client would have to sort through thousands of articles from their own browser, hence making the website loading time too long.
-I had to assume that the homepage's HTML would be updated regularly at the server side with new articles by using a server-side script, so that the website still works without Javascript applied on the client side. However, I kept the metadata of the articles (under handlebars.js) for the search function, which can only be used when JS is enabled.
-Used row-reverse for the flex direction regarding the 'TOP STORIES' plus social media banner for a bit of better flow in terms of accessibility.
+Name: Jasmine Goh
+
+Introduction:
+    I just wrote a news website that is supposed to have the look of a classic newspaper with lots of columns and different-sized wording. 
+
+Inspiration:
+    I took lots of inspiration from popoular news sites such as The Bloomberg, NYPOST, and local news sites for my own website design.
+    For instance I liked how NYPOST's homepage was filled with columns presenting different types of content, like a real newspaper.
+    I also used The Straits Time's website as a reference for my theme, as it reflects a classic newspaper layout the best.
+    I had also noticed some websites like The Straits Times would hide some blocks of information for the mobile users, so I tried it as well.
+
+Accessibility:
+    In index.html, I use a reverse flex-row for the 'TOP STORIES' and social media banner. As they were on the same line, I wanted to prevent a potential confusion when a screen reader might be reading elements chronologically. In the DOM, I introduced the social media platforms first, then introduced the TOP STORIES heading. Then I used a reverse row for the final visual presentation.
+    I kept to the accessbility rules that I know of as strictly as I could, such as by using the appropriate tags and providing aria attributes where appropriate.
+    I established a hierarchy of headings as much as I could. On the homepage, the website logo is the H1, but on any other page, the logo would be the H2, and the H1 would belong to the next most important detail about the page.
+
+Usability:
+    I re-did the navigation bar multple times because it was difficult to get a pretty-looking one that would accomodate both the mobile users and desktop users.
+    I also wrote a function to toggle dark mode in JS for those who prefer it, and also for myself who was starting to get tired from the glaring white screen.
+    I also wrote a scroll-back-up-to-top button for the sake of convenience. This and the previous case might be less useful for the visually impaired, but still adds some usability for those who are not.
+
+Learning:
+    I had did the previous team assignment purely with vanilla HTML, without any libraries added, so I had to pick up how to write Bootstrap properly. It was not very different from typing in vanilla HTML, but I did have to Google and reference the Bootstrap docs every so often. Nevertheless, it was a valuable learning experience as Bootstrap is a commonly used library in webdev in workplaces.
+    One of the most useful things I picked up from this session was the contain CSS property; by using the appropriate value, horizontal scrolling could be disabled. Any other method I tried would not work.
+    I had a lot of trouble understanding the grid system in Bootstrap at first, but I experimented and read up on its details, and the random paddings and margins finally ceased.
+    I spent a lot of time trying to figure out why the navbar was not being sticky. Eventually the sticky element has to be a direct child of the same parent as the element to be scrolled.
+    I also used Handlebars for a week before remembering the website must work without JS, and scrapped all the handlebars script.
+
+Evaluation I:
+    I think the footer and layout of the homepage looked the neatest, both in mobile and desktop. It was usable.
+
+Evaluation II:
+    I wanted to put the website logo in the middle of the collapsed navbar banner for mobile, and also tried putting the logo in the middle of the navbar but I was not sure how good it was for accessbility. However I could not figure out how to. I spent a lot of time trying to do it and the results were weird. However, I see other websites being able to do it, so there should be a way.
+    The ticker also admittedly works weirdly on mobile; I saw one smooth vertical news ticker on a website but couldn't inspect the code.
+    I do think my code could be a lot neater than what it is now, I am unable to figure out how to create rows without padding.
+
+Resources:
+    Some of my code was adapted from:
+    - https://getbootstrap.com/docs/5.1
+    - https://bbbootstrap.com/snippets/bootstrap-vertical-news-ticker-10085148
+
+    News articles were lifted/adapted from:
+    - https://globalvoices.org/about/global-voices-attribution-policy/ (Creative Commons License, redistribution is allowed)
+    
+    News categories/reference for other content such as About Us and Contact Us pages were adapted from a combination of:
+    - The Bloomberg
+    - The Straits Times
+    - NYPOST
+    - Channel NewsAsia
+    - news.sky.com
+    - Yahoo! news
+    - Bing news
+
+    Libraries used:
+    - Bootstrap v5.1
+
+Appendices:
+    - Sitemap is saved as sitemap.png
+    - wireframe is saved as wireframe.pdf
+    - phone mock up is phone.jpg, desktop mockup is pc.jpg
